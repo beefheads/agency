@@ -1,0 +1,49 @@
+/*
+   Поля выбора
+ */
+// @import "./base/select";
+
+/*
+  Поля ввода
+ */ 
+// @import "./base/textfield";
+
+/*
+  Модальные окна
+ */ 
+// @import "./base/modal";
+
+/*
+  Аккордеоны (Спойлеры)
+ */ 
+// @import "./base/accordion";
+
+/*
+  Кирпичики
+ */ 
+.flex {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+}
+.flex--center {
+  justify-content: center;
+  align-items: center;
+}
+.flex--column {
+  flex-direction: column;
+}
+
+/*
+  Модификаторы
+ */ 
+._only-desktop {
+  @media (max-width: $tablet) {
+    display: none !important;
+  }
+}
+._only-mobile {
+  @media (min-width: ($tablet + 1)) {
+    display: none !important;
+  }
+}

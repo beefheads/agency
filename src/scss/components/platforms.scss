@@ -1,0 +1,17 @@
+.platforms {
+	display: flex;
+}
+.platforms__link {
+	height: rem(49);
+	display: block;
+	margin-right: rem(40);
+	transition: var(--tr-regular);
+}
+.platforms__link:last-child {
+	margin-right: 0;
+}
+.platforms__link:hover {
+  @media (any-hover:hover) {
+    transform: scale(1.1);
+  }
+}
