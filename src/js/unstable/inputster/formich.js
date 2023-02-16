@@ -91,16 +91,58 @@ function validateEmail(input) {
 
 const buttonClasses = {
   disabled: "button--disabled",
+  success: "button--success",
 };
 function disableButton(button) {
   if (!button.innerText) return;
   button.classList.add(buttonClasses.disabled);
+  button.classList.add(buttonClasses.success);
   button.disabled = true;
 }
 function enableButton(button) {
   if (!button.innerText) return;
   button.classList.remove(buttonClasses.disabled);
+  button.classList.remove(buttonClasses.success);
   button.disabled = false;
+}
+
+function getButtonTextElement(submitButton) {
+  if (submitButton.querySelector('.button__text')) {
+    return submitButton.querySelector('.button__text');
+  }
+  return submitButton;
+}
+function getButtonSuccessText(submitButton) {
+  let successText = "✓"
+
+  if (submitButton.dataset.successText != undefined) {
+    successText = submitButton.dataset.successText;
+  }
+
+  return successText
+}
+
+
+function submitButtonOnFormSent(submitButton) {
+  if (!submitButton) return
+  const buttonTextElement = getButtonTextElement(submitButton)
+  submitButton.dataset.buttonText = buttonTextElement.innerHTML;
+
+  const successText = getButtonSuccessText(submitButton);
+  buttonTextElement.innerHTML = successText;
+
+  disableButton(submitButton);
+
+  setTimeout(() => {
+    buttonTextElement.innerHTML = submitButton.dataset.buttonText;
+    enableButton(submitButton);
+  }, 10000);
+}
+
+function validateAllInputs(inputs) {
+    inputs.forEach((input) => {
+      validateInput(input);
+    });
 }
 
 // Обработчик форм
@@ -109,10 +151,8 @@ formsList.forEach((form) => {
   form.addEventListener("submit", async (event) => {
     event.preventDefault();
 
-    console.log("submit");
-    form.querySelectorAll(".input").forEach((input) => {
-      validateInput(input);
-    });
+    validateAllInputs(form.querySelectorAll('.input'));
+    if (form.querySelector('.input--invalid')) return;
 
     const formBody = new URLSearchParams(new FormData(form));
     let response = await fetch(form.action, {
@@ -122,33 +162,29 @@ formsList.forEach((form) => {
         "Content-Type": "application/x-www-form-urlencoded",
       },
     });
-    // try {
-    // let result = await response.json();
-    // console.log(result);
-    // console.log(form);
-    // console.log("thanks");
-    const submitButton = form.querySelector('button[type="submit"]');
-    if (submitButton) {
-      submitButton.dataset.buttonText = submitButton.innerHTML;
-      // submitButton.innerText = "Message envoyé"
-      submitButton.innerHTML = "✓";
-      disableButton(submitButton);
 
-      setTimeout(() => {
-        submitButton.innerHTML = submitButton.dataset.buttonText;
-        enableButton(submitButton);
-      }, 10000);
-    }
+    // try {
+
+    const submitButton = form.querySelector('button[type="submit"]');
+    submitButtonOnFormSent(submitButton)
+
     const sentEvent = new Event("form_sent", {
       bubbles: true,
       cancelable: false,
     });
     form.dispatchEvent(sentEvent);
+
     // } catch {
     // console.log("error");
     // }
     setTimeout(() => {
       window.poppa.closeCurrentPop()
+      if (form.classList.contains('js_submit-thanks')) {
+        window.poppa.openPop('thanks');
+        setTimeout(() => {
+          window.poppa.closePop('thanks');
+        }, 5000)
+      }
       form.reset();
     }, 2500);
   });

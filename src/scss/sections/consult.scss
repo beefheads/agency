@@ -7,7 +7,7 @@
 	display: grid;
 	grid-template-columns: 530px 470px;
 	justify-content: space-between;
-	justify-items: space-between;
+	align-items: start;
 }
 .consult__title {
 	font-size: 1.6666666666666667rem; //30

@@ -119,6 +119,12 @@
   z-index: 4;
   pointer-events: none;
 }
+.button--success {
+  --button-bg: linear-gradient(0deg, #5BCE58, #5BCE58), radial-gradient(50% 50% at 50% 50%, #44C4FF 0%, #33B2EC 100%);
+  --button-bg-hover: linear-gradient(0deg, #5BCE58, #5BCE58), radial-gradient(50% 50% at 50% 50%, #44C4FF 0%, #33B2EC 100%);
+  --button-shadow: #4FBA4C;
+  pointer-events: none;
+}
 
 
 /*
