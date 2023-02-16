@@ -1,8 +1,12 @@
 import { copyToClipboard } from "../utils/helpers.js";
 
-const copyNotificationText = "Скопировано";
+// const copyNotificationText = "Скопировано";
+/*
+  Добавь класс js_copyclicker
 
-const copyClickItems = document.querySelectorAll(".js_click-copy");
+ */
+
+const copyClickItems = document.querySelectorAll(".js_copyclicker");
 copyClickItems.forEach((item) => {
   item.addEventListener("click", (e) => {
     if (
@@ -14,12 +18,19 @@ copyClickItems.forEach((item) => {
     } else {
       // код для обычных устройств
       e.preventDefault();
+      let copyNotificationText = item.dataset.copyText;
+      if (copyNotificationText === undefined) {
+        copyNotificationText = "✓";
+      }
+      
+      if (item.innerText.includes(copyNotificationText)) return;
+
 
       const copiedText = item.innerText;
       copyToClipboard(copiedText);
       item.dataset.text = copiedText;
-      if (item.classList.contains("hints__item--tel")) {
-        const telText = item.querySelector(".hints__item-text");
+      if (item.querySelector(".link__text")) {
+        const telText = item.querySelector(".link__text");
         telText.innerText = copyNotificationText;
         setTimeout(() => {
           telText.innerText = item.dataset.text;
