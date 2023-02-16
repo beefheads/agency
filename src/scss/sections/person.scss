@@ -1,0 +1,46 @@
+.person:nth-of-type(odd) {
+	background: radial-gradient(35.44% 163.09% at 75% 54.64%, #CFCFFE 0%, #8484E0 100%);
+}
+.person:nth-of-type(odd) .person__container {
+	display: grid;
+	grid-template-columns: 427px auto;
+}
+.person:nth-of-type(odd) .person__pic {
+	margin-top: -8.4rem;
+	margin-bottom: -5.6rem;
+	width: 97.2%;
+}
+
+.person:nth-of-type(even) {
+	background: radial-gradient(20.73% 95.41% at 25.49% 52.12%, #6FB6DD 0%, #4B89D2 100%);
+}
+.person:nth-of-type(even) .person__container {
+	display: grid;
+	grid-template-columns: auto 502px;
+}
+.person:nth-of-type(even) .person__about {
+	order: 1;
+}
+.person:nth-of-type(even) .person__pic {
+	margin-top: -9rem;
+	margin-left: -6.7rem;
+	width: 109.7%;
+	margin-bottom: -5.55rem;
+}
+
+.person__title {
+	font-weight: 400;
+	font-size: 1rem;
+	line-height: 145%;
+	margin-bottom: 1.1666666666666667em;
+  letter-spacing: -0.03em;
+}
+.person__name {
+	font-weight: 400;
+	font-size: 2.5rem;
+	line-height: 110%;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	margin-bottom: 0.5777777777777777em;
+}
+

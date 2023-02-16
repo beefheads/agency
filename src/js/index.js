@@ -5,21 +5,23 @@
 
 
 import "./components/header.js";
-import "./components/attach.js";
-import "./components/megachips.js";
-import { Fancybox, Carousel } from "@fancyapps/ui";
-// import { Fancybox, Carousel, Panzoom } from "@fancyapps/ui";
+// import "./components/attach.js";
+// import "./components/megachips.js";
+import "./components/carousels.js";
+import "./utils/ios-input-zoom-fix.js";
 
-Fancybox.bind('[data-fancybox]', {
-  Toolbar: {
-    display: [
-      "close",
-    ],
-  },
-});
+// import { Fancybox, Carousel } from "@fancyapps/ui";
+// import { Fancybox, Carousel, Panzoom } from "@fancyapps/ui";
+// Fancybox.bind('[data-fancybox]', {
+//   Toolbar: {
+//     display: [
+//       "close",
+//     ],
+//   },
+// });
 
 import "./unstable/copyclicker.js";
-import "./unstable/snacks.js";
+// import "./unstable/snacks.js";
 
 /**
  * Poppa
@@ -44,40 +46,39 @@ import "./utils/smooth-anchors.js";
 
 import "./unstable/inputster/formich.js";
 /**
- * Smooth anchors
+ * Bayans
  **/
 // import "./unstable/bayan.js";
 
-import intlTelInput from 'intl-tel-input';
-const telInputs = document.querySelectorAll('input[type="tel"]');
-telInputs.forEach((input) => {
-  const iti = intlTelInput(input, {
-      initialCountry: "ru",
-      // separateDialCode: true,
-      nationalMode: false,
-      preferredCountries: ['ru', 'by', "kz"],
-      utilsScript: "./js/phoneUtils.js"
-  });
-})
+// import intlTelInput from 'intl-tel-input';
+// const telInputs = document.querySelectorAll('input[type="tel"]');
+// telInputs.forEach((input) => {
+//   const iti = intlTelInput(input, {
+//       initialCountry: "ru",
+//       // separateDialCode: true,
+//       nationalMode: false,
+//       preferredCountries: ['ru', 'by', "kz"],
+//       utilsScript: "./js/phoneUtils.js"
+//   });
+// })
 
 
-import SliderBar from 'before-after-slider'; // import
-
-function makeBeforeAfterSlider(el, index) {
-  const beforeImg = el.dataset.before;
-  const afterImg = el.dataset.after;
-  const elClass = `js-comparer-${index}`;
-  el.classList.add(elClass)
-  return new SliderBar({
-      el: `.${elClass}`,
-      beforeImg,
-      afterImg,
-  });
-}
-const beforeAfterSliders = document.querySelectorAll('.before-after-slider');
-beforeAfterSliders.forEach((slider, index) => {
-  makeBeforeAfterSlider(slider, index);
-})
+// import SliderBar from 'before-after-slider'; // import
+// function makeBeforeAfterSlider(el, index) {
+//   const beforeImg = el.dataset.before;
+//   const afterImg = el.dataset.after;
+//   const elClass = `js-comparer-${index}`;
+//   el.classList.add(elClass)
+//   return new SliderBar({
+//       el: `.${elClass}`,
+//       beforeImg,
+//       afterImg,
+//   });
+// }
+// const beforeAfterSliders = document.querySelectorAll('.before-after-slider');
+// beforeAfterSliders.forEach((slider, index) => {
+//   makeBeforeAfterSlider(slider, index);
+// })
 
 /*
  * Переключает в мобильной версии видимость сайдбара с контактами
@@ -96,8 +97,6 @@ if (servicesLeadButton) {
   })
 }
 */
-import "./components/carousels.js";
-import "./utils/ios-input-zoom-fix.js";
 
 
 // import "./libs/aos.js";

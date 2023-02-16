@@ -1,0 +1,163 @@
+.rules {
+	background: radial-gradient(50% 50% at 50% 50%, #5C52EE 0%, #5148D1 100%);
+	padding-bottom: 5.9rem;
+}
+.rules__gallery {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	row-gap: 11rem;
+	column-gap: 5rem;
+	align-content: start;
+	align-items: start;
+}
+
+.rules-card {
+	position: relative;
+	max-width: 330px;
+}
+.rules-card:before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	display: block;
+	z-index: 2;
+	border-radius: 25px;
+	background: #6E66DF;
+}
+.rules-card__inner {
+	position: relative;
+	z-index: 3;
+	max-width: 100%;
+	width: 100%;
+	padding-left: 1.3333333333333333rem;
+	padding-right: 0.7888888888888888rem;
+	padding-bottom: 1.2777777777777777rem;
+}
+.rules-card:nth-of-type(1) .rules-card__connector {
+	position: absolute;
+	z-index: 1;
+	bottom: -2.8rem;
+	right: -6.4rem;
+	display: block;
+	width: 200px;
+	height: 200px;
+	background-image: url("../img/rules/rules-connector-1.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	transform: rotate(-80deg) scaleY(1.2);
+}
+.rules-card:nth-of-type(2) {
+	top: 11.2rem;
+}
+.rules-card:nth-of-type(2) .rules-card__inner {
+	padding-bottom: 2.2222222222222223rem;
+}
+.rules-card:nth-of-type(2) .rules-card__connector {
+	position: absolute;
+	z-index: 1;
+	top: -1rem;
+	right: -8rem;
+	display: block;
+	width: 200px;
+	height: 200px;
+	background-image: url("../img/rules/rules-connector-2.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	transform: rotate(-120deg) scaleY(1.2);
+}
+.rules-card:nth-of-type(3) {
+	top: 1.4rem;
+}
+.rules-card:nth-of-type(3) .rules-card__inner {
+	padding-bottom: 2.611111111111111rem;
+}
+.rules-card:nth-of-type(3) .rules-card__connector {
+	position: absolute;
+	z-index: 1;
+	bottom: -12.9rem;
+	left: -10.5rem;
+	display: block;
+	width: 330px;
+	height: 330px;
+	background-image: url("../img/rules/rules-connector-3.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+  transform: scale(-1, 1);
+}
+.rules-card:nth-of-type(4) {
+	top: 0.8rem;
+	left: 8.5rem;
+	order: 5;
+}
+.rules-card:nth-of-type(4) .rules-card__inner {
+	padding-bottom: 1.211111111111111rem;
+}
+.rules-card:nth-of-type(4) .rules-card__connector {
+	position: absolute;
+	z-index: 1;
+	top: 2.5rem;
+	left: -11rem;
+	display: block;
+	width: 200px;
+	height: 200px;
+	background-image: url("../img/rules/rules-connector-4.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	transform: rotate(69deg);
+}
+.rules-card:nth-of-type(5) {
+	left: 4.8rem;
+}
+.rules-card:nth-of-type(5) .rules-card__inner {
+	padding-bottom: 3.3rem;
+}
+
+.rules-card__media {
+	position: relative;
+	width: 160px;
+	height: 150px;
+	margin-top: -31%;
+	margin-bottom: 1.0555555555555556rem;
+	margin-left: -1.2rem;
+}
+.rules-card__media:before {
+	content: "";
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: block;
+	background: linear-gradient(0deg, #7269FF, #7269FF), linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
+	border: 1px solid rgba(255, 255, 255, 0.5);
+	border-radius: 50%;
+	width: 120px;
+	height: 120px;
+	z-index: 1;
+	margin-left: auto;
+	margin-right: auto;
+}
+.rules-card__pic {
+	position: relative;
+	z-index: 2;
+}
+.rules-card__title {
+	margin-bottom: 0.4444444444444444em;
+	font-weight: 700;
+	letter-spacing: -0.03em;
+}
+.rules-card__desc {
+	font-weight: 300;
+	margin-bottom: 1em;
+	line-height: 1.29;
+	letter-spacing: -0.01em;
+}
+.rules-card__desc:last-of-type {
+	margin-bottom: 0;
+}

@@ -2,8 +2,8 @@
   Секции
  */
 .section {
-  padding-top: 7.5rem; //120
-  padding-bottom: 7.5rem; //120
+  padding-top: 5.555555555555555rem; //120
+  padding-bottom: 5.555555555555555rem; //120
   @media (max-width: $desktop-m) {
     padding-top: 6rem; //120
     padding-bottom: 6rem; //120
@@ -28,12 +28,12 @@
   height: #{'calc(100% + 120px)'};
 }
 .section-title {
-  font-weight: 600;
-  font-size: 2rem;//rem(32);
-  margin-bottom: 3.75rem;//rem(60);
-  @media (max-width: $desktop-s) {
-    margin-bottom: 2.75rem;
-  }
+  font-weight: 400;
+  font-size: 2.5rem;//45px
+  text-transform: uppercase;
+  line-height: 1.05;
+  letter-spacing: 0.02em;
+  margin-bottom: 0.5em;
   @media (max-width: $tablet) {
     font-size: 1.2857142857142858rem;
     margin-bottom: 5.142857142857143rem;
@@ -48,7 +48,7 @@
   font-style: italic;
 }
 .section-text--bold {
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .section-text--center {
@@ -58,3 +58,32 @@
   text-align: right;
 }
 
+
+.section-ul {
+  font-size: 1rem;
+  padding-left: 1.7222222222222223em;
+  --color: var(--c-text-regular);
+  color: var(--color);
+}
+.section-ul li {
+  position: relative;
+  font-size: inherit;
+  color: inherit;
+  margin-bottom: 0.8888888888888888em;
+  line-height: 1.45;
+  letter-spacing: -0.03em;
+}
+.section-ul li:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -1.7222222222222223em;
+  display: block;
+  --size: 1.3333333333333333em;
+  max-width: var(--size);
+  min-width: var(--size);
+  width: var(--size);
+  height: var(--size);
+  background-color: var(--color);
+  @include getmask('../img/common/ul-bullet.svg');
+}

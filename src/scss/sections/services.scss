@@ -1,39 +1,316 @@
 .services {
-	padding-top: 9rem;
-	@media (max-width: $w-mobile) {
-		padding-top: 3.386rem;
-		// padding-bottom: 2.5rem;
-	}
+	overflow: hidden;
 }
-.services .stages__title {
-	@media (max-width: $w-mobile) {
-		// font-size: 1.03rem;
-		margin-bottom: 2.643rem;
-	}
+.services__container {
+	display: grid;
+	grid-template-columns: 530px auto;
 }
 
-.services .stages__gallery {
-	column-gap: 1.875rem;
-	row-gap: 1.825rem;
-	@media (max-width: $w-mobile) {
-		margin-left: -0.743rem;
-		margin-right: -0.743rem;
-		row-gap: 2.025rem;
-	}
+.section-title.services__title {
+	font-size: 3.3333333333333335rem; //60
+	font-weight: 700;
+	margin-bottom: 1.25em;//69
+	letter-spacing: 0;
 }
-.services .stages-card {
-	padding: 1.875rem 2.125rem 0.338rem;
-	min-height: 8.625rem;//138
-	@media (max-width: $w-mobile) {
-		min-height: 7.928571428571429rem;
-		padding: 2.357142857142857rem 1.125rem 0.943rem;
-	}
+
+
+.services__title {
+	font-size: 2.5rem;//45
+	margin-bottom: 0.2222222222222222em;
+	line-height: 1.1;
+	text-transform: uppercase;
+	letter-spacing: 0.03em;
+	font-weight: 400;
 }
-.services .stages-card__title {
-	font-size: 1.125rem;
-	margin-bottom: 1.4rem;
-	@media (max-width: $w-mobile) {
-		font-size: 1.025rem;
-		margin-bottom: 0.7rem;
-	}
+.services__subtitle {
+	font-weight: 700;
+	margin-bottom: 1.3em;
+	line-height: 1.45;
+}
+.services__desc {
+	margin-bottom: 0.9em;
+	letter-spacing: -0.011em;
+}
+.services__offer .services__desc:last-of-type {
+	margin-bottom: 1.9rem;
+}
+.services__button {
+	margin-bottom: 1.7rem;
+}
+.services__media {
+	position: relative;
+}
+.services__pic {
+	pointer-events: none;
+}
+.services__products {
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: grid;
+	width: 100%;
+	grid-template-columns: repeat(auto-fit, minmax(90px, 166px));;
+	column-gap: 16px;
+	align-items: start;
+}
+.services-card {
+	position: relative;
+	background: linear-gradient(0deg, rgba(176, 176, 242, 0.7), rgba(176, 176, 242, 0.7)), linear-gradient(135.94deg, rgba(255, 255, 255, 0.32) -10.42%, rgba(255, 255, 255, 0) 233.15%);
+	border: 1px solid #FFFFFF;
+	backdrop-filter: blur(47px);
+	border-radius: 10px;
+	padding: 15px;
+	padding-left: 0;
+	padding-right: 0;
+	padding-bottom: 13px;
+}
+.services-card__pic {
+	background: linear-gradient(135.94deg, rgba(255, 255, 255, 0.8) -10.42%, rgba(255, 255, 255, 0) 233.15%);
+	border: 1px solid #FFFFFF;
+	backdrop-filter: blur(7px);
+	border-radius: 10px;
+	margin-bottom: 6px;
+	max-width: 100px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.services-card__desc {
+	font-size: 1rem;
+	font-weight: 700;
+	line-height: 1.35;
+	text-align: center;
+}
+
+
+.services-marketing {
+	padding-top: 5.044rem;
+	background: radial-gradient(88.91% 133.37% at 80.22% 11.83%, #00B3F4 0%, #00ABEF 15.36%, #0095E1 39.34%, #0071CA 68.94%, #0044AE 99.37%);
+}
+.services-marketing .services-card:nth-of-type(1) {
+	top: 11.25rem;
+	left: 2.3rem;
+}
+.services-marketing .services-card:nth-of-type(2) {
+	top: -1.8rem;
+	left: 15.85rem;
+}
+.services-marketing .services-card:nth-of-type(3) {
+	top: 30rem;
+	left: -24.1rem;
+}
+.services-marketing .services-card:nth-of-type(4) {
+	top: 18.6rem;
+	left: 13.2rem;
+}
+.services-marketing .services-card:nth-of-type(5) {
+	left: 15rem;
+	top: 8.3rem;
+}
+
+.services-marketing .services__pic {
+	width: 150%;
+	margin-left: -11.6%;
+	margin-top: -2%;
+	margin-bottom: -13.3%;
+}
+
+
+.services-website {
+	padding-top: 5rem;
+	padding-bottom: 4.5rem;
+	background: radial-gradient(26.64% 122.6% at 31.74% 54.86%, #2727C4 0%, #2D2D8C 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+}
+.services-website .services__container {
+	grid-template-columns: auto 500px;
+}
+.services-website .services__offer {
+	order: 2;
+	padding-top: 5.3rem;
+}
+.services-website .services__title {
+	margin-bottom: 0.6em;
+}
+.services-website .services__desc {
+	margin-bottom: 0.9em;
+	font-weight: 400;
+	line-height: 1.45;
+	letter-spacing: -0.025em;
+}
+.services-website .services__pic {
+	width: 168%;
+	margin-left: -54.6%;
+	margin-top: 16%;
+	margin-bottom: -15.3%;
+	mix-blend-mode: screen;
+}
+.services-website .services-card:nth-of-type(1) {
+	top: 0.2rem;
+}
+.services-website .services-card:nth-of-type(2) {
+	top: 3rem;
+	left: 2.6rem;
+}
+.services-website .services-card:nth-of-type(3) {
+  top: 14.1rem;
+  left: 4.2rem;
+}
+.services-website .services-card:nth-of-type(4) {
+	top: 25.4rem;
+	left: 11.2rem;
+}
+.services-website .services-card:nth-of-type(5) {
+	top: 20.5rem;
+	left: 13.2rem;
+}
+.services-website .services__offer .services__desc:last-of-type {
+	margin-bottom: 2.8rem;
+}
+
+
+.services-design {
+	padding-top: 5.5rem;
+	padding-bottom: 0;
+	background: radial-gradient(51.08% 92.61% at 34.48% 48.92%, #857EE2 0%, #665DED 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+}
+.services-design .services__container {
+	grid-template-columns: 430px auto;
+}
+.services-design .services__title {
+	margin-bottom: 0.522em;
+}
+.services-design .services__desc {
+	line-height: 1.38;
+	letter-spacing: -0.025em;
+}
+.services-design .services__pic {
+	margin-top: -3.6rem;
+	width: 71.4%;
+	margin-left: 11.2rem;
+	margin-bottom: -0.75rem;
+}
+.services-design .services-card:nth-of-type(1) {
+	top: 19.6rem;
+	left: 32.3rem;
+}
+.services-design .services-card:nth-of-type(1) .services-card__img {
+	width: 80%;
+	height: 100%;
+	margin: 0 auto;
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+	display: block;
+}
+.services-design .services-card:nth-of-type(2) {
+	top: 28rem;
+	left: 9.4rem;
+}
+.services-design .services-card:nth-of-type(2) .services-card__img {
+	width: 80%;
+	height: 100%;
+	margin: 0 auto;
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+	display: block;
+}
+.services-design .services-card:nth-of-type(3) {
+	top: 23.1rem;
+	right: 16.2rem;
+}
+.services-design .services-card:nth-of-type(4) {
+	top: -0.7rem;
+	left: 1.4rem;
+}
+.services-design .services-card:nth-of-type(5) {
+	top: -6.5rem;
+	left: 5.7rem;
+}
+
+.services-adv {
+	padding-top: 6rem;
+	background: radial-gradient(19.53% 105.02% at 24.11% 62.86%, #E069A3 0%, #D92D82 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+}
+.services-adv .services__container {
+	grid-template-columns: auto 500px;
+}
+.services-adv .services__offer {
+	order: 2;
+}
+.services-adv .services__title {
+	margin-bottom: 0.6em;
+}
+.services-adv .services__desc {
+	line-height: 1.25;
+	margin-bottom: 1.3em;
+}
+.services-adv .services__pic{
+	width: 130%;
+	margin-left: -38.4%;
+	margin-top: -6.3%;	
+}
+.services-adv .services-card:nth-of-type(1) {
+	top: 13.8rem;
+	right: -0.3rem;
+}
+.services-adv .services-card:nth-of-type(2) {
+	top: 11.4rem;
+	right: -1.1rem;
+}
+.services-adv .services-card:nth-of-type(3) {
+	top: 8.8rem;
+	right: -1.9rem;
+}
+.services-adv .services-card:nth-of-type(4) {
+	top: 14.8rem;
+	left: 11.4rem;
+}
+.services-adv .services-card:nth-of-type(5) {
+	top: 11.3rem;
+	left: 12rem;
+}
+.services-adv .services__pic {
+	width: 163%;
+	margin-left: -47%;
+	margin-top: -6.5%;
+	margin-bottom: -41.9%;
+}
+
+.services-insta {
+	padding-top: 6.344rem;
+	padding-bottom: 0.3rem;
+	background: radial-gradient(29.09% 87.35% at 74.64% 57.13%, #A561F7 0%, #852DEE 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+}
+.services-insta .services__container {
+	grid-template-columns: 531px auto;
+}
+.services-insta .services__title {
+	margin-bottom: 0.4em;
+}
+.services-insta .services__desc {
+	margin-bottom: 1.4em;
+}
+.services-insta .services__pic {
+	width: 162%;
+	margin-left: -28%;
+	margin-top: -5%;
+	margin-bottom: -0.3%;
+}
+.services-insta .services-card:nth-of-type(1) {
+	top: -0.2rem;
+	right: -2.2rem;
+}
+.services-insta .services-card:nth-of-type(2) {
+	top: 3.5rem;
+	right: -3.8rem;
+}
+.services-insta .services-card:nth-of-type(3) {
+	top: 15.1rem;
+	right: 18.7rem;
+}
+.services-insta .services-card:nth-of-type(4) {
+	top: -13.4rem;
+	left: 26rem;
+}
+.services-insta .services-card:nth-of-type(5) {
+	top: 4.2rem;
+	left: 3.5rem;
 }

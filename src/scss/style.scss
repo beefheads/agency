@@ -6,10 +6,10 @@
  */ 
 @import "./libs/aos";
 @import "./libs/swiper";
-@import "./libs/fancybox";
-@import "./b_libs/bayan";
-@import "./libs/intlTelInput";
-@import "./libs/juxtapose";
+// @import "./libs/fancybox";
+// @import "./b_libs/bayan";
+// @import "./libs/intlTelInput";
+// @import "./libs/juxtapose";
 
 /*
   Сброс CSS
@@ -27,52 +27,22 @@
   Шрифты
  */ 
 @include font(
-  "Inter",
-  italic,
-  300,
-  "../resources/fonts/inter/inter-lightitalic"
-);
-@include font(
-  "Inter",
+  "Noto Sans",
   normal,
   300,
-  "../resources/fonts/inter/inter-light"
+  "../resources/fonts/noto-sans/notosans-light"
 );
 @include font(
-  "Inter",
+  "Noto Sans",
   normal,
   400,
-  "../resources/fonts/inter/inter-regular"
+  "../resources/fonts/noto-sans/notosans-regular"
 );
 @include font(
-  "Inter",
+  "Noto Sans",
   normal,
-  500,
-  "../resources/fonts/inter/inter-medium"
-);
-@include font(
-  "Inter",
-  italic,
-  500,
-  "../resources/fonts/inter/inter-mediumitalic"
-);
-@include font(
-  "Inter",
-  normal,
-  600,
-  "../resources/fonts/inter/inter-semibold"
-);
-@include font(
-  "Inter",
-  italic,
-  600,
-  "../resources/fonts/inter/inter-semibolditalic"
-);
-@include font(
-  "TexGyreChorus",
-  normal,
-  400,
-  "../resources/fonts/texgyrechorus/texgyrechorus-mediumitalic"
+  700,
+  "../resources/fonts/noto-sans/notosans-bold"
 );
 
 
@@ -80,35 +50,28 @@
 html {
   // scrollbar-color: #000 transparent;
   // scrollbar-width: thin;
-  // font-size: 16px;
-  // font-size: calc(var(--index) * 0.54795);
-  // font-size: 0.833333vw; //1920 16px
-  font-size: #{'calc(var(--index) * 0.547945)'}; // 1920 — 16px
+  --fz-modifier: 0.61644;
+  font-size: #{'calc(var(--index) * var(--fz-modifier))'}; // 1920 — 18px
   @media (max-width: $desktop-l) {
-    font-size: #{'calc(var(--index) * 0.759735)'}; // 1920 — 16px
+    --fz-modifier: 0.759735;
   }
-  @media (max-width: 1500px) {
-    font-size: 1.11111vw; //1440 16px
-  }
-  // @media (max-width: 1300px) {
-  //   font-size: 1.0938vw; //1300 14px
+  // @media (max-width: 1500px) {
+  //   font-size: 1.11111vw; //1440 16px
   // }
   @media (max-width: $tablet) {
-    font-size: #{'calc(var(--index) * 1.2963)'}; // 1920 — 16px
+    --fz-modifier: 1.2963;
   }
   @media (max-width: 320px) {
-    font-size: #{'calc(var(--index) * 1.37255)'}; // 1920 — 16px
+    --fz-modifier: 1.37255;
   }
 }
 body {
   font-family: var(--ff-regular);
   font-weight: 400;
-  line-height: 1.16;
-  // letter-spacing: -0.5px;
-  
-  // font-size: #{'calc(var(--index) * 0.547945)'}; // 1920 — 16px
+  line-height: 1.35;
   color: var(--c-text-regular);
   background-color: var(--bg-app);
+  letter-spacing: initial;
 }
 body._lock {
   overflow: hidden;
@@ -136,6 +99,7 @@ body._lock {
   width: 100%;
   max-width: var(--w-container);
 }
+/*
 .container-tight {
   max-width: #{'calc(var(--w-container) - 101px)'};
   margin-left: auto;
@@ -148,6 +112,7 @@ body._lock {
     max-width: #{'calc(var(--w-container) - 60px)'};
   }
 }
+*/
 input[type="search"]::-webkit-search-cancel-button {
   display: none;
   opacity: 0;

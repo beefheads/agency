@@ -3,7 +3,25 @@
 import Swiper, { Navigation, Autoplay, Pagination, Thumbs, EffectFade, Grid } from "swiper";
 import {debounce} from "../utils/helpers.js";
 
+let reviews = new Swiper(".reviews-carousel", {
+  modules: [Navigation, Pagination, EffectFade],
+  spaceBetween: 30,
+  pagination: {
+    el: ".reviews-pagination",
+    clickable: true,
+  },
+  // effect: 'fade',
+  //   fadeEffect: {
+  //   crossFade: true
+  // },
+  navigation: {
+    nextEl: ".reviews-button-next",
+    prevEl: ".reviews-button-prev",
+  },
+  slidesPerView: 2,
+}); 
 
+/*
 const quizes = document.querySelectorAll('.quiz-carousel');
 function togglePrevVisibility(context) {
   if (context.activeIndex == 0) {
@@ -132,6 +150,7 @@ window.appendImagesModalCases = (slides) => {
     `)
   })
 }
+*/
 
 /*
   @param gallerySettings: {
@@ -143,6 +162,7 @@ window.appendImagesModalCases = (slides) => {
     config
   }
  */
+/*
 function makeThumbSwiper(gallerySettings, thumbsSettings) {
   let carouselThumbs;
   let carouselGallery;
@@ -409,10 +429,12 @@ buttonCaseCallers.forEach((button, index) => {
 //   spaceBetween: 10,
 //   slidesPerView: 3,
 // });
+*/
 
 // -----
 
 
+/*
 if (document.querySelector('.promo-carousel')) {
   function normalizePaginationOffset(swiper) {
     // if (window.innerWidth > 769) return
@@ -545,3 +567,4 @@ if (document.querySelector('.product-cases-carousel')) {
     })
   }, 1000)
 }
+*/
