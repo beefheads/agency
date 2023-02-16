@@ -94,10 +94,10 @@
   transition: all 0.3s ease;
 }
 .poppa__closer::before {
-  transform: rotate(40deg);
+  transform: rotate(45deg);
 }
 .poppa__closer::after {
-  transform: rotate(-40deg);
+  transform: rotate(-45deg);
 }
 .poppa__closer:hover::before,
 .poppa__closer:hover::after {

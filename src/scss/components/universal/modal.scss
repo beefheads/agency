@@ -1,7 +1,57 @@
 .modal {
+  background: #342960;
+  border: 0.638298px solid rgba(255, 255, 255, 0.03);
+  border-radius: 25.5319px;
+  max-width: 300px;
+  padding-top: 1.4444444444444444rem;
+  padding-left: 0.8605555555555555rem;
+  padding-right: 0.8605555555555555rem;
+  padding-bottom: 2.5rem;
+}
+
+.modal-callback-form .form-regular {
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  max-width: 270px;
+  width: 100%;
+}
+.modal-callback-form__title {
+  margin-bottom: 0.6666666666666666rem;
+  color: var(--c-text-on);
+}
+.modal-callback-form .form__fieldset {
+  margin-bottom: 0.8333333333333334rem;
+}
+.modal__title {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 135%;
+  text-align: center;
+  margin-bottom: 0.2222222222222222rem;
+}
+.modal__desc {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 135%;
+  margin-bottom: 1.6666666666666667rem;
+  text-align: center;
+}
+.modal-thanks__icon {
+  display: block;
+  --size: 4.222222222222222rem;
+  max-width: var(--size);
+  min-width: var(--size);
+  width: var(--size);
+  height: var(--size);
+  margin-left: auto;
+  margin-right: auto;
+}
+/*
+.modal {
   padding: 4.6875rem 3.875rem;//rem(75) rem(62);
   border-radius: 0.625rem;
-  max-width: 58.625rem;//938px;
+  max-width: 58.625rem;//938piconx;
   @media (max-width: $tablet) {
     padding: 4.285rem 2.142rem;
     max-width: 25.714rem ;
@@ -567,3 +617,4 @@
 // .modal-gallery-crousel {
 //   display: none;
 // }
+*/

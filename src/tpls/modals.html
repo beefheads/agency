@@ -1,4 +1,26 @@
-<!-- @@include('./modals/modal-table.html') @@include('./modals/modal-ball.html') -->
+<div id="callback-form" class="poppa modal modal-callback-form">
+  <form action="" class="form form-regular form__modal-callback">
+    <h3 class="form__title modal-callback-form__title">
+      Remplissez le <br>
+      formulaire
+    </h3>
+    <fieldset class="form__fieldset">
+      @@include('./inputs/name.html', {})
+      @@include('./inputs/tel.html', {})
+    </fieldset>
+    <button class="button-primary form__button modal-callback-form__button">
+      <span class="button__text">Envoyer des données</span>
+      <span class="button__shade"></span>
+    </button>
+  </form>
+</div>
+<div class="poppa modal modal-thanks" id="thanks">
+  <h3 class="modal__title">Grâce</h3>
+  <p class="modal__desc">Je vous rappellerai bientôt</p>
+  <svg class="modal-thanks__icon">
+    <use xlink:href="./img/common/valid.svg#valid" />
+  </svg>
+</div>
 
 <!-- <div class="snack" id="snack-cookies">
   <div class="container gtc-2 snack__container">
