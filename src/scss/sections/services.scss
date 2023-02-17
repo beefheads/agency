@@ -3,7 +3,7 @@
 }
 .services__container {
 	display: grid;
-	grid-template-columns: 530px auto;
+	grid-template-columns: 29.444444444444443rem auto;//530px auto;
 }
 
 .section-title.services__title {
@@ -34,6 +34,10 @@
 .services__offer .services__desc:last-of-type {
 	margin-bottom: 1.9rem;
 }
+.services__buttons {
+	display: flex;
+	flex-direction: column;
+}
 .services__button {
 	margin-bottom: 1.7rem;
 }
@@ -49,28 +53,28 @@
 	top: 0;
 	display: grid;
 	width: 100%;
-	grid-template-columns: repeat(auto-fit, minmax(90px, 166px));;
-	column-gap: 16px;
+	grid-template-columns: repeat(auto-fit, minmax(5rem, 9.222222222222221rem));//repeat(auto-fit, minmax(90px, 166px));;
+	column-gap: 0.8888888888888888rem;//16px;
 	align-items: start;
 }
 .services-card {
 	position: relative;
 	background: linear-gradient(0deg, rgba(176, 176, 242, 0.7), rgba(176, 176, 242, 0.7)), linear-gradient(135.94deg, rgba(255, 255, 255, 0.32) -10.42%, rgba(255, 255, 255, 0) 233.15%);
-	border: 1px solid #FFFFFF;
+	border: 0.05555555555555555rem solid #FFFFFF;
 	backdrop-filter: blur(47px);
-	border-radius: 10px;
-	padding: 15px;
+	border-radius: 0.5555555555555556rem;//10px;
+	padding: 0.8333333333333334rem;//15px;
 	padding-left: 0;
 	padding-right: 0;
-	padding-bottom: 13px;
+	padding-bottom: 0.7222222222222222rem;//13px;
 }
 .services-card__pic {
 	background: linear-gradient(135.94deg, rgba(255, 255, 255, 0.8) -10.42%, rgba(255, 255, 255, 0) 233.15%);
-	border: 1px solid #FFFFFF;
+	border: 0.05555555555555555rem solid #FFFFFF;
 	backdrop-filter: blur(7px);
-	border-radius: 10px;
-	margin-bottom: 6px;
-	max-width: 100px;
+	border-radius: 0.5555555555555556rem;//10
+	margin-bottom: 0.3333333333333333remj;//6px;
+	max-width: 5.555555555555555rem;//100px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -121,7 +125,7 @@
 	background: radial-gradient(26.64% 122.6% at 31.74% 54.86%, #2727C4 0%, #2D2D8C 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
 }
 .services-website .services__container {
-	grid-template-columns: auto 500px;
+	grid-template-columns: auto 27.77777777777778rem;//auto 500px;
 }
 .services-website .services__offer {
 	order: 2;
@@ -173,7 +177,7 @@
 	background: radial-gradient(51.08% 92.61% at 34.48% 48.92%, #857EE2 0%, #665DED 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
 }
 .services-design .services__container {
-	grid-template-columns: 430px auto;
+	grid-template-columns: 23.88888888888889rem auto;//430px auto;
 }
 .services-design .services__title {
 	margin-bottom: 0.522em;
@@ -230,7 +234,7 @@
 	background: radial-gradient(19.53% 105.02% at 24.11% 62.86%, #E069A3 0%, #D92D82 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
 }
 .services-adv .services__container {
-	grid-template-columns: auto 500px;
+	grid-template-columns: auto 27.77777777777778rem;//auto 500px;
 }
 .services-adv .services__offer {
 	order: 2;
@@ -280,7 +284,7 @@
 	background: radial-gradient(29.09% 87.35% at 74.64% 57.13%, #A561F7 0%, #852DEE 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
 }
 .services-insta .services__container {
-	grid-template-columns: 531px auto;
+	grid-template-columns: 29.5rem auto;//531px auto;
 }
 .services-insta .services__title {
 	margin-bottom: 0.4em;

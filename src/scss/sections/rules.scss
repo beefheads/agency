@@ -13,7 +13,7 @@
 
 .rules-card {
 	position: relative;
-	max-width: 330px;
+	max-width: 18.333333333333332rem;//330px;
 }
 .rules-card:before {
 	content: "";
@@ -42,8 +42,8 @@
 	bottom: -2.8rem;
 	right: -6.4rem;
 	display: block;
-	width: 200px;
-	height: 200px;
+	width: 11.11111111111111rem;//200px;
+	height: 11.11111111111111rem;//200px;
 	background-image: url("../img/rules/rules-connector-1.svg");
 	background-repeat: no-repeat;
 	background-position: center;
@@ -62,8 +62,8 @@
 	top: -1rem;
 	right: -8rem;
 	display: block;
-	width: 200px;
-	height: 200px;
+	width: 11.11111111111111rem;//200px;
+	height: 11.11111111111111rem;//200px;
 	background-image: url("../img/rules/rules-connector-2.svg");
 	background-repeat: no-repeat;
 	background-position: center;
@@ -82,8 +82,8 @@
 	bottom: -12.9rem;
 	left: -10.5rem;
 	display: block;
-	width: 330px;
-	height: 330px;
+	width: 18.333333333333332rem;//330px;
+	height: 18.333333333333332rem;//330px;
 	background-image: url("../img/rules/rules-connector-3.svg");
 	background-repeat: no-repeat;
 	background-position: center;
@@ -104,8 +104,8 @@
 	top: 2.5rem;
 	left: -11rem;
 	display: block;
-	width: 200px;
-	height: 200px;
+	width: 11.11111111111111rem;//200px;
+	height: 11.11111111111111rem;//200px;
 	background-image: url("../img/rules/rules-connector-4.svg");
 	background-repeat: no-repeat;
 	background-position: center;
@@ -121,8 +121,8 @@
 
 .rules-card__media {
 	position: relative;
-	width: 160px;
-	height: 150px;
+	width: 8.88888888888889rem;//160px;
+	height: 8.333333333333334rem;//150px;
 	margin-top: -31%;
 	margin-bottom: 1.0555555555555556rem;
 	margin-left: -1.2rem;
@@ -137,8 +137,8 @@
 	background: linear-gradient(0deg, #7269FF, #7269FF), linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
 	border: 1px solid rgba(255, 255, 255, 0.5);
 	border-radius: 50%;
-	width: 120px;
-	height: 120px;
+	width: 6.666666666666667rem;//120px;
+	height: 6.666666666666667rem;//120px;
 	z-index: 1;
 	margin-left: auto;
 	margin-right: auto;

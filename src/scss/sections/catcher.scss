@@ -5,7 +5,7 @@
 }
 .catcher__container {
 	display: grid;
-	grid-template-columns: 494px auto;
+	grid-template-columns: 27.444444444444443rem auto;//494px auto;
 	transform: translateX(-0.3rem);
 }
 
@@ -19,8 +19,8 @@
 	background: #342960;
 	border: 1px solid rgba(255, 255, 255, 0.03);
 	color: var(--c-text-regular);
-	max-width: 470px;
-	padding-top: 40px;
+	max-width: 26.11111111111111rem;//470px;
+	padding-top: 2.2222222222222223rem;//40px;
 }
 .catcher__desc {
 	letter-spacing: -0.03em;
@@ -32,10 +32,6 @@
 	z-index: 2;
 	position: relative;
 }
-// .catcher__media {
-// 	z-index: 1;
-// 	position: relative;
-// }
 .catcher__pic {
 	width: 165%;
 	margin-left: -28%;

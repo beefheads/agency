@@ -19,8 +19,8 @@
 	margin-bottom: -1.4444444444444444rem;
 }
 .profit-card {
-	margin-left: 0.8333333333333334rem;
-	margin-right: 0.8333333333333334rem;
+	margin-left: 0.7333333333333334rem;
+	margin-right: 0.7333333333333334rem;
 	max-width: 20.555555555555557rem;// 370px;
 	background-color: #A860FE;
 	padding-left: 1.8888888888888888rem;
@@ -28,12 +28,12 @@
 	padding-right: 0.8333333333333334rem;
 	font-size: 1rem;
 	margin-bottom: 7rem;
-	border-radius: 15px;
+	border-radius: 0.8333333333333334rem;//15px;
 }
 .profit-card__media {
 	position: relative;
-	height: 166px;
-	width: 166px;
+	height: 9.222222222222221rem;//166px;
+	width: 9.222222222222221rem;//166px;
 	margin-top: -32%;
 	margin-bottom: 1rem;
 }
@@ -46,9 +46,9 @@
 	z-index: 1;
 	display: block;
 	width: 100%;
-	height: 91px;
+	height: 5.055555555555555rem;//91px;
 	background: linear-gradient(0deg, #A864FA, #A864FA), linear-gradient(0deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));
-	border: 1px solid rgba(255, 255, 255, 0.3);
+	border: 0.05555555555555555rem solid rgba(255, 255, 255, 0.3);
 	border-radius: 10px;
 }
 .profit-card__pic {

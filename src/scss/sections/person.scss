@@ -3,7 +3,7 @@
 }
 .person:nth-of-type(odd) .person__container {
 	display: grid;
-	grid-template-columns: 427px auto;
+	grid-template-columns: 23.72222222222222rem auto;//427px auto;
 }
 .person:nth-of-type(odd) .person__pic {
 	margin-top: -8.4rem;
@@ -16,7 +16,7 @@
 }
 .person:nth-of-type(even) .person__container {
 	display: grid;
-	grid-template-columns: auto 502px;
+	grid-template-columns: auto 27.88888888888889rem;//auto 502px;
 }
 .person:nth-of-type(even) .person__about {
 	order: 1;

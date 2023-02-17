@@ -5,7 +5,7 @@
 }
 .price__container {
 	display: grid;
-	grid-template-columns: 412px auto;
+	grid-template-columns: 22.88888888888889rem auto;//412px auto;
 }
 .price__title {
 	line-height: 1.35;
@@ -19,7 +19,7 @@
 	margin-bottom: 1rem;
 }
 .price__form {
-	max-width: 300px;
+	max-width: 16.666666666666668rem;//300px;
 }
 .price__form .form__fieldset {
 	margin-bottom: 0.9rem;
