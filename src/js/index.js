@@ -111,9 +111,11 @@ formNamers.forEach(button => {
 
 // import "./libs/aos.js";
 import AOS from "aos";
-AOS.init();
 window.aos = AOS;
+window.aos.init({
+  offset: 50
+});
 
 setTimeout(() => {
-  AOS.refresh();
+  window.aos.refresh();
 }, 5000)
