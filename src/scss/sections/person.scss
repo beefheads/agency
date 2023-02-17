@@ -1,3 +1,8 @@
+.person {
+	@media (max-width: $desktop-m) {
+		padding-bottom: 5.55rem;
+	}
+}
 .person:nth-of-type(odd) {
 	background: radial-gradient(35.44% 163.09% at 75% 54.64%, #CFCFFE 0%, #8484E0 100%);
 }
