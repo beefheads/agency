@@ -37,7 +37,6 @@ header.addEventListener("header-show", (e) => {
 });
 
 function stickyHeader() {
-  console.log('st')
   if (isWindowScrolled()) {
     header.classList.add(HEADER_SCROLLED_CLASS);
   } else {
