@@ -98,6 +98,16 @@ if (servicesLeadButton) {
 }
 */
 
+const formNamers = document.querySelectorAll('[data-name-form]');
+function nameForm(form, name){
+  form.querySelector('[name="form_name"]').value = name
+}
+formNamers.forEach(button => {
+  button.addEventListener("click", (e) => {
+    const form = document.querySelector('.modal-callback-form')
+    nameForm(form, button.dataset.nameForm);
+  });
+})
 
 // import "./libs/aos.js";
 import AOS from "aos";

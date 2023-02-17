@@ -5,10 +5,11 @@
       formulaire
     </h3>
     <fieldset class="form__fieldset">
+      <input type="hidden" class="input-hidden" readonly name="form_name">
       @@include('./inputs/name.html', {})
       @@include('./inputs/tel.html', {})
     </fieldset>
-    <button class="button-primary form__button modal-callback-form__button">
+    <button class="button-primary form__button modal-callback-form__button" type="submit">
       <span class="button__text">Envoyer des données</span>
       <span class="button__shade"></span>
     </button>

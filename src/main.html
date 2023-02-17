@@ -34,7 +34,7 @@
                 Grâce au marketing et <br>
                 à la publicité en ligne
               </p>
-              <button class="button-primary hero__button" type="button" data-poppa-open="callback-form">
+              <button class="button-primary hero__button" type="button" data-poppa-open="callback-form" data-name-form="first screen">
                 <span class="button__text">
                   Obtenez un devis détaillé <br>
                   en 3 options de prix
@@ -273,6 +273,7 @@
                 consultation marketing gratuite
               </h3>
               <fieldset class="form__fieldset">
+                  <input type="hidden" class="input-hidden" readonly name="consult">
                 @@include("tpls/inputs/tel.html", {})
               </fieldset>
               <button class="button-primary form__button consult__form-button" type="submit" data-success-text="Je vous rappellerai bientôt">
@@ -302,7 +303,7 @@
                 Dans de tels cas, vous devez faire des recherches marketing pour comprendre comment, quoi et à qui vendre.
               </p>
               <div class="services__buttons">
-                <button class="button-primary services__button" data-poppa-open="callback-form">
+                <button class="button-primary services__button" data-poppa-open="callback-form" data-name-form="marketing">
                   <span class="button__text">
                     Commander le service
                   </span>
@@ -358,7 +359,7 @@
               <p class="services__desc">
                 Un tel site est le meilleur investissement pour votre marque et votre entreprise et vous permettra de générer des millions.
               <div class="services__buttons">
-                <button class="button-primary services__button" data-poppa-open="callback-form">
+                <button class="button-primary services__button" data-poppa-open="callback-form" data-name-form="website">
                   <span class="button__text">
                     Commander le service
                   </span>
@@ -409,7 +410,7 @@
                 Nos designers sont heureux de créer un produit dont vous et vos clients potentiels serez complètement ravis.
               </p>
               <div class="services__buttons">
-                <button class="button-primary services__button" data-poppa-open="callback-form">
+                <button class="button-primary services__button" data-poppa-open="callback-form" data-name-form="design">
                   <span class="button__text">
                     Commander le service
                   </span>
@@ -466,7 +467,7 @@
                 PS Nous créerons des scripts de vente pour un traitement efficace des demandes entrantes si vous ne parvenez pas à les mettre en œuvre vous-même.
               </p>
               <div class="services__buttons">
-                <button class="button-primary services__button" data-poppa-open="callback-form">
+                <button class="button-primary services__button" data-poppa-open="callback-form" data-name-form="advertising">
                   <span class="button__text">
                     Commander le service
                   </span>
@@ -577,6 +578,7 @@
               </p>
               <form action="./callback" class="form price__form">
                 <fieldset class="form__fieldset">
+                  <input type="hidden" class="input-hidden" readonly name="price">
                   @@include("tpls/inputs/tel.html", {})
                 </fieldset>
                 <button class="button-primary form__button price__form-button" type="submit">
@@ -744,6 +746,7 @@
                 </h3>
                 <p class="form__desc catcher__form-desc">pour vous inscrire à une consultation marketing gratuite</p>
                 <fieldset class="form__fieldset">
+                  <input type="hidden" class="input-hidden" readonly name="last screen">
                   @@include("tpls/inputs/tel.html", {})
                 </fieldset>
                 <button class="button-primary form__button catcher__form-submit" type="submit">
