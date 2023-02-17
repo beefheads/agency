@@ -7,7 +7,9 @@ $max-width-container: 1170px;
 $laptop-l: 1500px;
 $laptop: 1100px;
 $tablet: 992px;
+$mobile-xl: 601px;
 $mobile-l: 450px;
+$mobile-xm: 412px;
 $mobile-m: 390px;
 $mobile-s: 330px;
 
@@ -39,15 +41,8 @@ $w-mobile: 810px;
   --ff-regular: "Noto Sans", sans-serif;
 
   // Widths
-  // --w-container: 1170px;
-  --w-container: 65rem;
-  // @media (max-width: $desktop-m) {
-  //   --w-container: 1260px;
-  // }
-  @media (max-width: $desktop-s) {
-    --w-container: 892px;
-  }
-  @media (max-width: 768px) {
+  --w-container: 65.8rem;//1170
+  @media (max-width: $tablet) {
     --w-container: 100%;
   }
 }

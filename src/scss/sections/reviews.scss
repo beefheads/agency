@@ -90,6 +90,15 @@
 	border-radius: 0.5555555555555556rem;//10px;
 	overflow: hidden;
 	@media (max-width: $tablet) {
+		min-height: 18.233rem;
+	}
+	@media (max-width: $w-mobile) {
+		min-height: 23.933333333333334rem;
+	}
+	@media (max-width: $mobile-xm) {
+		min-height: 20.933333333333334rem;
+	}
+	@media (max-width: $mobile-s) {
 		min-height: 23.933333333333334rem;
 	}
 }

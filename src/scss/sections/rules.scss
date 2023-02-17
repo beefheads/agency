@@ -124,10 +124,17 @@
 	@media (max-width: $tablet) {
 		transform: none;
 		top: unset;
-		right: 3rem;
+		right: unset;//3rem;
+		left: -4.5rem;
 		width: 13.111rem;
 		height: 13.111rem;
 	  bottom: -9.9rem;
+	}
+	@media (max-width: $w-mobile) {
+		left: 0.5rem;
+	}
+	@media (max-width: $mobile-l) {
+		left: -4.5rem;
 	}
 }
 .rules-card:nth-of-type(3) {
@@ -162,6 +169,15 @@
   	width: 12.333rem;
 		height: 12.333rem;
 		bottom: -11.7rem;
+		left: 8rem;
+  }
+	@media (max-width: $w-mobile) {
+		left: 12rem;
+	}
+  @media (max-width: $mobile-l) {
+		left: 5rem;
+  }
+  @media (max-width: $mobile-s) {
 		left: 0rem;
   }
 }
@@ -195,11 +211,16 @@
 	@media (max-width: $tablet) {
 		transform: none;
 		top: unset;
-		left: unset;
 		bottom: -8rem;
-		right: 0rem;
 		width: 13.111rem;
 		height: 13.111rem;
+	}
+	@media (max-width: $w-mobile) {
+		left: -5rem;
+	}
+	@media (max-width: $mobile-s) {
+		left: unset;
+		right: 0rem;
 	}
 }
 .rules-card:nth-of-type(5) {
