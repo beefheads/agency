@@ -27,22 +27,22 @@
     // }
 
     &:nth-child(1) {
-      transform: translate(-50%, calc(-50% - 12px));
+      transform: translate(-50%, calc(-50% - 0.8rem));//12
     }
 
     &:nth-child(2) {
-      transform: translate(-50%, calc(-50% - 2px));
+      transform: translate(-50%, calc(-50% - 0.13333333333333333rem));//2
     }
 
     &:nth-child(3) {
-      transform: translate(-50%, calc(-50% + 8px));
+      transform: translate(-50%, calc(-50% + 0.5333333333333333rem));//8
     }
   }
 
   &.is-active {
     & span {
       &:nth-child(1) {
-        transform: translate(-50%, calc(-50% + 2px)) rotate(40deg);
+        transform: translate(-50%, calc(-50% + 0.13333333333333333rem)) rotate(40deg);//2
       }
 
       &:nth-child(2) {
@@ -50,7 +50,7 @@
       }
 
       &:nth-child(3) {
-        transform: translate(-50%, calc(-50% + 2px)) rotate(-40deg);
+        transform: translate(-50%, calc(-50% + 0.13333333333333333rem)) rotate(-40deg);//2
       }
     }
   }
