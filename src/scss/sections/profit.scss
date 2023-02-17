@@ -2,11 +2,19 @@
 	padding-top: 5.556rem;
 	padding-bottom: 0;
 	background-color: #994EF3;
+	@media (max-width: $tablet) {
+		padding-top: 3.356rem;
+		overflow: hidden;
+	}
 }
 .profit__title {
 	font-size: 2.6155555555555554rem;//47
 	margin-bottom: 2.6808510638297873em;
 	line-height: 1.3;
+	@media (max-width: $tablet) {
+		font-size: 1.3333333333333333rem; //20
+		margin-bottom: 6.45em;
+	}
 }
 
 .profit__gallery {
@@ -17,6 +25,9 @@
 	max-width: initial;
 	margin-left: -0.8333333333333334rem;
 	margin-bottom: -1.4444444444444444rem;
+	@media (max-width: $tablet) {
+		margin-bottom: -2.144rem;
+	}
 }
 .profit-card {
 	margin-left: 0.7333333333333334rem;
@@ -29,6 +40,12 @@
 	font-size: 1rem;
 	margin-bottom: 7rem;
 	border-radius: 0.8333333333333334rem;//15px;
+	@media (max-width: $tablet) {
+		padding-left: 1.089rem;
+		padding-right: 1.889rem;
+		margin-bottom: 5.5rem;
+		border-radius: 1rem;
+	}
 }
 .profit-card__media {
 	position: relative;
@@ -36,6 +53,10 @@
 	width: 9.222222222222221rem;//166px;
 	margin-top: -32%;
 	margin-bottom: 1rem;
+	@media (max-width: $tablet) {
+		width: 9.622rem;
+		margin-top: -39%;
+	}
 }
 .profit-card__media:after {
 	content: "";
@@ -50,6 +71,9 @@
 	background: linear-gradient(0deg, #A864FA, #A864FA), linear-gradient(0deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));
 	border: 0.05555555555555555rem solid rgba(255, 255, 255, 0.3);
 	border-radius: 10px;
+	@media (max-width: $tablet) {
+		height: 5.356rem;
+	}
 }
 .profit-card__pic {
 	position: relative;
@@ -59,6 +83,16 @@
 .profit-card__title {
 	font-weight: 700;
 	margin-bottom: 0.7222222222222222em;
+	@media (max-width: $tablet) {
+		max-width: 80%;
+		margin-bottom: 0.4222222222222222em;
+		line-height: 1.25;
+	}
+}
+.profit-card__title br {
+	@media (max-width: $tablet) {
+		display: none;
+	}
 }
 .profit-card__desc {
 	font-weight: 300;

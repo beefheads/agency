@@ -1,6 +1,21 @@
 .rules {
 	background: radial-gradient(50% 50% at 50% 50%, #5C52EE 0%, #5148D1 100%);
 	padding-bottom: 5.9rem;
+	@media (max-width: $tablet) {
+		padding-bottom: 4.35rem;
+		overflow: hidden;
+	}
+}
+.rules__title {
+	@media (max-width: $tablet) {
+		letter-spacing: 0;
+		margin-bottom: 5.5em;
+	}
+}
+.rules__title br {
+	@media (max-width: $tablet) {
+		display: none;
+	}
 }
 .rules__gallery {
 	display: grid;
@@ -9,11 +24,18 @@
 	column-gap: 5rem;
 	align-content: start;
 	align-items: start;
+	@media (max-width: $tablet) {
+		grid-template-columns: 1fr;
+		row-gap: 5.2rem
+	}
 }
 
 .rules-card {
 	position: relative;
 	max-width: 18.333333333333332rem;//330px;
+	@media (max-width: $tablet) {
+		max-width: 17.333rem;
+	}
 }
 .rules-card:before {
 	content: "";
@@ -24,8 +46,11 @@
 	height: 100%;
 	display: block;
 	z-index: 2;
-	border-radius: 25px;
+	border-radius: 1.3888888888888888rem;
 	background: #6E66DF;
+	@media (max-width: $tablet) {
+		border-radius: 1.2727266666666668rem;
+	}
 }
 .rules-card__inner {
 	position: relative;
@@ -35,6 +60,10 @@
 	padding-left: 1.3333333333333333rem;
 	padding-right: 0.7888888888888888rem;
 	padding-bottom: 1.2777777777777777rem;
+	@media (max-width: $tablet) {
+		padding-left: 1.033rem;
+		padding-bottom: 1.378rem;
+	}
 }
 .rules-card:nth-of-type(1) .rules-card__connector {
 	position: absolute;
@@ -49,12 +78,35 @@
 	background-position: center;
 	background-size: contain;
 	transform: rotate(-80deg) scaleY(1.2);
+	@media (max-width: $tablet) {
+		bottom: -7.8rem;
+		right: -2.7rem;
+		width: 12.111rem;
+		height: 13.111rem;
+		transform: none;
+	}
 }
 .rules-card:nth-of-type(2) {
 	top: 11.2rem;
+	@media (max-width: $tablet) {
+		top: 0;
+		left: 0;
+		justify-self: end;
+	}
 }
 .rules-card:nth-of-type(2) .rules-card__inner {
 	padding-bottom: 2.2222222222222223rem;
+	@media (max-width: $tablet) {
+		padding-bottom: 1.422rem;
+		padding-right: 0.633rem;
+	}
+}
+.rules-card:nth-of-type(2) .rules-card__pic {
+	@media (max-width: $tablet) {
+		top: 1.5rem;
+		width: 80%;
+		height: 80%;
+	}
 }
 .rules-card:nth-of-type(2) .rules-card__connector {
 	position: absolute;
@@ -69,12 +121,28 @@
 	background-position: center;
 	background-size: contain;
 	transform: rotate(-120deg) scaleY(1.2);
+	@media (max-width: $tablet) {
+		transform: none;
+		top: unset;
+		right: 3rem;
+		width: 13.111rem;
+		height: 13.111rem;
+	  bottom: -9.9rem;
+	}
 }
 .rules-card:nth-of-type(3) {
 	top: 1.4rem;
+	@media (max-width: $tablet) {
+		top: 1rem;
+		left: 0;
+	}
 }
 .rules-card:nth-of-type(3) .rules-card__inner {
 	padding-bottom: 2.611111111111111rem;
+	@media (max-width: $tablet) {
+		padding-bottom: 1.311rem;
+		padding-right: 0.3rem;
+	}
 }
 .rules-card:nth-of-type(3) .rules-card__connector {
 	position: absolute;
@@ -89,11 +157,24 @@
 	background-position: center;
 	background-size: contain;
   transform: scale(-1, 1);
+  @media (max-width: $tablet) {
+  	transform: none;
+  	width: 12.333rem;
+		height: 12.333rem;
+		bottom: -11.7rem;
+		left: 0rem;
+  }
 }
 .rules-card:nth-of-type(4) {
 	top: 0.8rem;
 	left: 8.5rem;
 	order: 5;
+	@media (max-width: $tablet) {
+		top: 1rem;
+		left: 0;
+		order: initial;
+		justify-self: end;
+	}
 }
 .rules-card:nth-of-type(4) .rules-card__inner {
 	padding-bottom: 1.211111111111111rem;
@@ -111,12 +192,28 @@
 	background-position: center;
 	background-size: contain;
 	transform: rotate(69deg);
+	@media (max-width: $tablet) {
+		transform: none;
+		top: unset;
+		left: unset;
+		bottom: -8rem;
+		right: 0rem;
+		width: 13.111rem;
+		height: 13.111rem;
+	}
 }
 .rules-card:nth-of-type(5) {
 	left: 4.8rem;
+	@media (max-width: $tablet) {
+		top: 1rem;
+		left: 0;
+	}
 }
 .rules-card:nth-of-type(5) .rules-card__inner {
 	padding-bottom: 3.3rem;
+	@media (max-width: $tablet) {
+		padding-bottom: 1.3rem;
+	}
 }
 
 .rules-card__media {
@@ -126,6 +223,11 @@
 	margin-top: -31%;
 	margin-bottom: 1.0555555555555556rem;
 	margin-left: -1.2rem;
+	@media (max-width: $tablet) {
+	  margin-top: -33.4%;
+	  margin-left: -1.5rem;
+	  margin-bottom: 0.756rem;
+	}
 }
 .rules-card__media:before {
 	content: "";
@@ -142,6 +244,10 @@
 	z-index: 1;
 	margin-left: auto;
 	margin-right: auto;
+	@media (max-width: $tablet) {
+		width: 6.067rem;
+		height: 6.067rem;
+	}
 }
 .rules-card__pic {
 	position: relative;
@@ -151,12 +257,19 @@
 	margin-bottom: 0.4444444444444444em;
 	font-weight: 700;
 	letter-spacing: -0.03em;
+	@media (max-width: $tablet) {
+		max-width: 70%;
+	}
 }
 .rules-card__desc {
 	font-weight: 300;
 	margin-bottom: 1em;
 	line-height: 1.29;
 	letter-spacing: -0.01em;
+	@media (max-width: $tablet) {
+		margin-bottom: 0.9em;
+		line-height: 1.25;
+	}
 }
 .rules-card__desc:last-of-type {
 	margin-bottom: 0;

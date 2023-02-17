@@ -59,10 +59,13 @@ html {
   //   font-size: 1.11111vw; //1440 16px
   // }
   @media (max-width: $tablet) {
-    --fz-modifier: 1.2963;
+    --fz-modifier: 1.91939;
+  }
+  @media (max-width: $mobile-l) {
+    --fz-modifier: 1.228714;
   }
   @media (max-width: 320px) {
-    --fz-modifier: 1.37255;
+    --fz-modifier: 1.47059;
   }
 }
 body {
@@ -98,6 +101,8 @@ body._lock {
   margin-left: auto;
   width: 100%;
   max-width: var(--w-container);
+  padding-left: 0.6666666666666666rem;
+  padding-right: 0.6666666666666666rem;
 }
 /*
 .container-tight {

@@ -2,11 +2,19 @@
 	overflow: hidden;
 	padding-top: 5.7rem;
 	background: linear-gradient(60.65deg, #45108A 12.91%, #3D065F 33.65%, #10054D 87.44%);
+	@media (max-width: $tablet) {
+		padding-top: 3.5rem;
+		padding-bottom: 3.8rem;
+	}
 }
 .catcher__container {
 	display: grid;
 	grid-template-columns: 27.444444444444443rem auto;//494px auto;
 	transform: translateX(-0.3rem);
+	@media (max-width: $tablet) {
+		grid-template-columns: 1fr;
+		transform: none;
+	}
 }
 
 .catcher__title {
@@ -14,6 +22,16 @@
 	letter-spacing: -0.03em;
 	line-height: 1.35;
 	margin-bottom: 0.35em;
+	@media (max-width: $tablet) {
+		font-size: 1.3333333333333333rem;
+		text-align: center;
+	}
+}
+.catcher__title br {
+	@media (max-width: $tablet) {
+		display: none;
+	}
+
 }
 .catcher__form {
 	background: #342960;
@@ -21,11 +39,27 @@
 	color: var(--c-text-regular);
 	max-width: 26.11111111111111rem;//470px;
 	padding-top: 2.2222222222222223rem;//40px;
+	@media (max-width: $tablet) {
+		padding-top: 1.722rem;;
+		max-width: 100%;
+	}
 }
 .catcher__desc {
 	letter-spacing: -0.03em;
 	line-height: 1.45;
 	margin-bottom: 1.1111111111111112rem;
+	@media (max-width: $tablet) {
+		text-align: center;
+		max-width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 1.411rem;
+	}
+}
+.catcher__desc br {
+	@media (max-width: $tablet) {
+		display: none;
+	}
 }
 
 .catcher__offer {
@@ -37,4 +71,10 @@
 	margin-left: -28%;
 	margin-top: -12%;
 	margin-bottom: -4%;
+	@media (max-width: $tablet) {
+		width: 132%;
+		margin-left: -15.6%;
+		margin-top: 7%;
+		margin-bottom: -4%;
+	}
 }

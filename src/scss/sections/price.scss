@@ -2,10 +2,17 @@
 	color: #5A5561;
 	padding-top: 6rem;
 	overflow: hidden;
+	@media (max-width: $tablet) {
+		padding-top: 3.2rem;
+		padding-bottom: 1.5rem;
+	}
 }
 .price__container {
 	display: grid;
 	grid-template-columns: 22.88888888888889rem auto;//412px auto;
+	@media (max-width: $tablet) {
+		grid-template-columns: 1fr;
+	}
 }
 .price__title {
 	line-height: 1.35;
@@ -13,13 +20,29 @@
 	letter-spacing: 0;
 	font-size: 2.2222222222222223rem;
 	margin-bottom: 0em;
+	@media (max-width: $tablet) {
+		font-size: 1.3333333333333333rem;
+		max-width: 80%;
+		margin-bottom: 0.4em;
+	}
+}
+.price__title br {
+	@media (max-width: $tablet) {
+		display: none;
+	}
 }
 .price__desc {
 	line-height: 1.45;
 	margin-bottom: 1rem;
+	@media (max-width: $tablet) {
+		margin-bottom: 1.8rem;
+	}
 }
 .price__form {
 	max-width: 16.666666666666668rem;//300px;
+	@media (max-width: $tablet) {
+		max-width: 100%;
+	}
 }
 .price__form .form__fieldset {
 	margin-bottom: 0.9rem;
@@ -39,4 +62,9 @@
 	width: 130%;
 	margin-top: -7.4%;
 	margin-left: 10%;
+	@media (max-width: $tablet) {
+		width: 110%;
+		margin-top: 12.6%;
+		margin-left: -5%;
+	}
 }

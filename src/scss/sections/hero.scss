@@ -6,15 +6,33 @@
   background-size: cover;
   background-color: #170550;
   overflow: hidden;
+  @media (max-width: $tablet) {
+    padding-top: 6.933333333333334rem;
+  }
 }
 .hero__container {
   display: grid;
   grid-template-columns: 31rem auto;//558px auto;
+  @media (max-width: $tablet) {
+    grid-template-columns: 1fr;
+  }
+}
+.hero__title {
+  @media (max-width: $tablet) {
+    font-size: 1.7333333333333334rem;
+    margin-bottom: 0.5769230769230769em;
+    line-height: 110%;
+  }
 }
 .hero__desc {
   font-size: 1.3888888888888888rem;
   margin-bottom: 0.75em;
   line-height: 1.35;
+  @media (max-width: $tablet) {
+    font-size: 1.0666666666666667rem;
+    line-height: 1.45;
+    margin-bottom: 1.15em;
+  }
 }
 .hero__button {
   padding-top: 0.8636363636363636em;
@@ -27,4 +45,10 @@
   margin-top: -6%;
   margin-bottom: -67.8%;
   pointer-events: none;
+  @media (max-width: $tablet) {
+    width: 130%;
+    margin-left: -16%;
+    margin-top: 14%;
+    margin-bottom: -48.8%;
+  }
 }

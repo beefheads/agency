@@ -2,6 +2,10 @@
 	@media (max-width: $desktop-m) {
 		padding-bottom: 5.55rem;
 	}
+	@media (max-width: $tablet) {
+		padding-top: 2.55rem;
+		overflow: hidden;
+	}
 }
 .person:nth-of-type(odd) {
 	background: radial-gradient(35.44% 163.09% at 75% 54.64%, #CFCFFE 0%, #8484E0 100%);
@@ -9,11 +13,20 @@
 .person:nth-of-type(odd) .person__container {
 	display: grid;
 	grid-template-columns: 23.72222222222222rem auto;//427px auto;
+	@media (max-width: $tablet) {
+		grid-template-columns: 1fr;
+	}
 }
 .person:nth-of-type(odd) .person__pic {
 	margin-top: -8.4rem;
 	margin-bottom: -5.6rem;
 	width: 97.2%;
+	@media (max-width: $tablet) {
+		margin-top: 0.3em;
+		margin-bottom: -5.6rem;
+		width: 145.2%;
+		margin-left: -5.3rem;
+	}
 }
 
 .person:nth-of-type(even) {
@@ -22,15 +35,27 @@
 .person:nth-of-type(even) .person__container {
 	display: grid;
 	grid-template-columns: auto 27.88888888888889rem;//auto 502px;
+	@media (max-width: $tablet) {
+		grid-template-columns: 1fr;
+	}
 }
 .person:nth-of-type(even) .person__about {
 	order: 1;
+	@media (max-width: $tablet) {
+		order: initial;
+	}
 }
 .person:nth-of-type(even) .person__pic {
 	margin-top: -9rem;
 	margin-left: -6.7rem;
 	width: 109.7%;
 	margin-bottom: -5.55rem;
+	@media (max-width: $tablet) {
+		margin-top: -0.4rem;
+		margin-left: -4.2rem;
+		width: 141.7%;
+		margin-bottom: -5.55rem;
+	}
 }
 
 .person__title {
@@ -39,6 +64,9 @@
 	line-height: 145%;
 	margin-bottom: 1.1666666666666667em;
   letter-spacing: -0.03em;
+  @media (max-width: $tablet) {
+		margin-bottom: 0.2666666666666667em;
+  }
 }
 .person__name {
 	font-weight: 400;
@@ -47,5 +75,9 @@
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
 	margin-bottom: 0.5777777777777777em;
+	@media (max-width: $tablet) {
+		font-size: 1.6666666666666667rem;
+		margin-bottom: 0.6666666666666667em;
+	}
 }
 

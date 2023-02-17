@@ -35,6 +35,12 @@
 
   cursor: pointer;
   transition: all 0.3s ease;
+  @media (max-width: $tablet) {
+    font-size: 1.02564rem;  
+    min-width: initial;
+    width: 100%;
+    max-width: initial;
+  }
 }
 .button__shade {
   content: "";
@@ -109,6 +115,13 @@
   transition: all 0.3s ease-out;
   text-align: center;
   text-transform: uppercase;
+
+  @media (max-width: $tablet) {
+    font-size: 0.60824rem; //9.1236
+    min-width: 5.666666666666667rem; 
+    padding-top: 1.0719452847560174em;
+    padding-bottom: 1.6440878600552413em;
+  }
 }
 .button--wait {
   opacity: 0.5;

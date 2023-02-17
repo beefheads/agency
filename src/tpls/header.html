@@ -1,47 +1,64 @@
 <header class="header">
-	<div class="header__container header__container--mobile">
-	</div>
-	<div class="container header__container header__container--desktop">
+	<div class="container header__container">
 		<a href="#" class="header__logo">
 			<img src="./img/common/qury-logo.png" alt="qurydigital" class="header__logo-img">
 		</a>
-		<nav class="header__nav">
-			<ul class="header__nav-list">
-				<li class="header__nav-item">
-					<a href="#" class="header__nav-link">Page Principale</a>
-				</li>
-				<li class="header__nav-item">
-					<a href="#" class="header__nav-link">Nos services</a>
-				</li>
-				<li class="header__nav-item">
-					<a href="#" class="header__nav-link">Nos formations</a>
-				</li>
-				<li class="header__nav-item">
-					<a href="#" class="header__nav-link">La consultation</a>
-				</li>
-				<li class="header__nav-item">
-					<a href="#" class="header__nav-link">Nos événements</a>
-				</li>
-			</ul>		
-		</nav>
-		<div class="header__contacts">
-			<a href="tel:+33753113545" class="header__contacts-link link-tel js_copyclicker" data-copy-text="Copié">
-				<svg class="link__icon">
-					<use xlink:href="./img/common/phone.svg#phone" />
-				</svg>
-				<span class="link__text">+33 7 53 11 35 45</span>
-			</a>
-			<a href="mailto:qurydigital@gmail.com" class="header__contacts-link link-mail js_copyclicker" data-copy-text="Copié">
+		<div class="header-contacts-mobile">
+			<a href="mailto:qurydigital@gmail.com" class="header-contacts-mobile__link link-mail">
 				<svg class="link__icon">
 					<use xlink:href="./img/common/mail.svg#mail" />
 				</svg>
-				<span class="link__text">qurydigital@gmail.com</span>
 			</a>
+			<a href="tel:+33753113545" class="header-contacts-mobile__link link-tel">
+				<svg class="link__icon">
+					<use xlink:href="./img/common/phone.svg#phone" />
+				</svg>
+			</a>
+		</div>
+		<div class="header__menu">
+			<nav class="header__nav">
+				<ul class="header__nav-list">
+					<li class="header__nav-item">
+						<a href="#" class="header__nav-link">Page Principale</a>
+					</li>
+					<li class="header__nav-item">
+						<a href="#" class="header__nav-link">Nos services</a>
+					</li>
+					<li class="header__nav-item">
+						<a href="#" class="header__nav-link">Nos formations</a>
+					</li>
+					<li class="header__nav-item">
+						<a href="#" class="header__nav-link">La consultation</a>
+					</li>
+					<li class="header__nav-item">
+						<a href="#" class="header__nav-link">Nos événements</a>
+					</li>
+				</ul>		
+			</nav>
+			<div class="header__contacts">
+				<a href="tel:+33753113545" class="header__contacts-link link-tel js_copyclicker" data-copy-text="Copié">
+					<svg class="link__icon">
+						<use xlink:href="./img/common/phone.svg#phone" />
+					</svg>
+					<span class="link__text">+33 7 53 11 35 45</span>
+				</a>
+				<a href="mailto:qurydigital@gmail.com" class="header__contacts-link link-mail js_copyclicker" data-copy-text="Copié">
+					<svg class="link__icon">
+						<use xlink:href="./img/common/mail.svg#mail" />
+					</svg>
+					<span class="link__text">qurydigital@gmail.com</span>
+				</a>
+			</div>
 		</div>
 		<button class="button-thirdly header__button">
 			<span class="button__text">
 				Consultation
 			</span>
 		</button>
+    <button class="burger header__burger" type="button">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
 	</div>
 </header>

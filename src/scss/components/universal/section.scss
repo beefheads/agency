@@ -9,8 +9,8 @@
     padding-bottom: 6rem; //120
   }
   @media (max-width: $tablet) {
-    padding-top: 4.285714285714286rem; //60
-    padding-bottom: 4.285714285714286rem; //60
+    padding-top: 3.285714285714286rem; //60
+    padding-bottom: 3.285714285714286rem; //60
   }
 }
 .section .vertical-strings {
@@ -35,8 +35,9 @@
   letter-spacing: 0.02em;
   margin-bottom: 0.5em;
   @media (max-width: $tablet) {
-    font-size: 1.2857142857142858rem;
-    margin-bottom: 5.142857142857143rem;
+    font-size: 1.3333333333333333rem;
+    margin-bottom: 0.75em;
+    line-height: 1.25;
   }
 }
 .section-desc {
@@ -64,6 +65,9 @@
   padding-left: 1.7222222222222223em;
   --color: var(--c-text-regular);
   color: var(--color);
+  @media (max-width: $tablet) {
+    padding-left: 1.322em;
+  }
 }
 .section-ul li {
   position: relative;
@@ -72,6 +76,9 @@
   margin-bottom: 0.8888888888888888em;
   line-height: 1.45;
   letter-spacing: -0.03em;
+  @media (max-width: $tablet) {
+    margin-bottom: 0.6888888888888888em;
+  }
 }
 .section-ul li:after {
   content: "";
@@ -86,4 +93,9 @@
   height: var(--size);
   background-color: var(--color);
   @include getmask('../img/common/ul-bullet.svg');
+  @media (max-width: $tablet) {
+     --size: 1.0666666666666667em;
+     left: -1.322em;
+     top: 0.1em;
+  }
 }

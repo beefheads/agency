@@ -5,7 +5,6 @@ import {debounce} from "../utils/helpers.js";
 
 let reviews = new Swiper(".reviews-carousel", {
   modules: [Navigation, Pagination, EffectFade],
-  spaceBetween: 30,
   pagination: {
     el: ".reviews-pagination",
     clickable: true,
@@ -18,7 +17,14 @@ let reviews = new Swiper(".reviews-carousel", {
     nextEl: ".reviews-button-next",
     prevEl: ".reviews-button-prev",
   },
-  slidesPerView: 2,
+  slidesPerView: 1.1,
+  spaceBetween: 15,
+  breakpoints: {
+    993: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    }
+  }
 }); 
 
 /*
