@@ -1,0 +1,20 @@
+{
+    "name": "qurydigital",
+    "short_name": "qurydigital",
+    "icons": [
+        {
+            "src": "/img/manifest/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/img/manifest/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#ea5aba",
+    "background_color": "#ea5aba",
+    "start_url": "qurydigital.com",
+    "display": "standalone"
+}

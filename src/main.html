@@ -13,9 +13,19 @@
                 
     <meta property="og:title" content="Nous créerons un flux stable de clients vers votre entreprise et augmenterons la notoriété de votre marque">
     <meta property="og:desc" content="Grâce au marketing et à la publicité en ligne">
-    <meta property="og:url" content="">
+    <meta property="og:url" content="https://qurydigital.com/">
     <meta property="og:image" content="./img/common/og.jpg">
     <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/manifest/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/manifest/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/manifest/favicon-16x16.png">
+    <link rel="manifest" href="./img/manifest/site.webmanifest">
+    <link rel="mask-icon" href="./img/manifest/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="./img/manifest/favicon.ico">
+    <meta name="msapplication-TileColor" content="#ea5aba">
+    <meta name="msapplication-config" content="./img/manifest/browserconfig.xml">
+    <meta name="theme-color" content="#ea5aba">
 
   </head>
   <body>
@@ -96,7 +106,7 @@
                 </div>
                 <h3 class="profit-card__title">
                   3. Nous suivons les <br>
-                  tandances du marché
+                  tendances du marché
                 </h3>
                 <p class="profit-card__desc">Le marché moderne est en constante évolution, et nous le sommes avec lui, ce qui nous permet de travailler de plusieurs façons sur vos projets.</p>
               </article>
@@ -306,7 +316,7 @@
                 </article>
               </div>
             </div>
-            <form action="./callback" class="consult__form form form-regular">
+            <form action="./mail.php" class="consult__form form form-regular">
               <h3 class="form__title">
                 Remplissez le <br>
                 formulaire ci-dessous
@@ -316,7 +326,9 @@
                 consultation marketing gratuite
               </h3>
               <fieldset class="form__fieldset">
-                  <input type="hidden" class="input-hidden" readonly name="consult">
+                <input type="hidden" class="input-hidden" readonly name="consult">
+                @@include("tpls/inputs/name.html", {})
+                @@include("tpls/inputs/email.html", {})
                 @@include("tpls/inputs/tel.html", {})
               </fieldset>
               <button class="button-primary form__button consult__form-button" type="submit" data-success-text="Je vous rappellerai bientôt">
@@ -372,11 +384,11 @@
                   <picture class="services-card__pic"><img src="./img/services/marketing/icon-3.svg" alt="Gamme de produits" class="services-card__img"></picture>
                   <p class="services-card__desc">Gamme&nbsp;de produits</p>
                 </div>
-                <div class="services-card" data-aos="zoom-out-up" data-aos-delay="400">
+                <div class="services-card" data-aos="zoom-out-up" data-aos-delay="200">
                   <picture class="services-card__pic"><img src="./img/services/marketing/icon-4.svg" alt="Forte proposition de vente" class="services-card__img"></picture>
                   <p class="services-card__desc">Forte proposition de&nbsp;vente</p>
                 </div>
-                <div class="services-card" data-aos="zoom-out-up" data-aos-delay="500">
+                <div class="services-card" data-aos="zoom-out-up" data-aos-delay="300">
                   <picture class="services-card__pic"><img src="./img/services/marketing/icon-5.svg" alt="Analyse de la concurrence" class="services-card__img"></picture>
                   <p class="services-card__desc">Analyse de la <br> concurrence</p>
                 </div>
@@ -437,13 +449,13 @@
                   </picture>
                   <p class="services-card__desc">Magasin <br>en ligne</p>
                 </div>
-                <div class="services-card" data-aos="zoom-out-up" data-aos-delay="400">
+                <div class="services-card" data-aos="zoom-out-up" data-aos-delay="200">
                   <picture class="services-card__pic">
                     <img src="./img/services/website/icon-4.svg" alt="Site Internet - carte de visite" class="services-card__img">
                   </picture>
                   <p class="services-card__desc">Site Internet - carte de visite</p>
                 </div>
-                <div class="services-card" data-aos="zoom-out-up" data-aos-delay="500">
+                <div class="services-card" data-aos="zoom-out-up" data-aos-delay="300">
                   <picture class="services-card__pic"><img src="./img/services/website/icon-5.svg" alt="Landing Page" class="services-card__img"></picture>
                   <p class="services-card__desc">Landing <br> Page</p>
                 </div>
@@ -456,7 +468,7 @@
           </div>
         </section>
 
-        <section class="section services services-design" id="insta">
+        <section class="section services services-design">
           <div class="container services__container">
             <div class="services__offer">
               <h3 class="services__title">Design</h3>
@@ -493,11 +505,11 @@
                   <picture class="services-card__pic"><img src="./img/services/design/icon-3.svg" alt="Création d'un logo" class="services-card__img"></picture>
                   <p class="services-card__desc">Création <br>d'un logo</p>
                 </div>
-                <div class="services-card" data-aos="zoom-out-up" data-aos-delay="400">
+                <div class="services-card" data-aos="zoom-out-up" data-aos-delay="200">
                   <picture class="services-card__pic"><img src="./img/services/design/icon-4.svg" alt="Conception de publicité extérieure et intérieure" class="services-card__img"></picture>
                   <p class="services-card__desc">Conception de publicité extérieure et intérieure</p>
                 </div>
-                <div class="services-card" data-aos="zoom-out-up" data-aos-delay="500">
+                <div class="services-card" data-aos="zoom-out-up" data-aos-delay="300">
                   <picture class="services-card__pic"><img src="./img/services/design/icon-5.svg" alt="Conception de réseaux sociaux et sites internet" class="services-card__img"></picture>
                   <p class="services-card__desc">Conception de <br>réseaux <br>sociaux et sites internet</p>
                 </div>
@@ -553,11 +565,11 @@
                   <picture class="services-card__pic"><img src="./img/services/adv/icon-3.svg" alt="Publications chez les blogueurs" class="services-card__img"></picture>
                   <p class="services-card__desc">Publications chez les blogueurs</p>
                 </div>
-                <div class="services-card" data-aos="zoom-out-up" data-aos-delay="400">
+                <div class="services-card" data-aos="zoom-out-up" data-aos-delay="200">
                   <picture class="services-card__pic"><img src="./img/services/adv/icon-4.svg" alt="E-mailing" class="services-card__img"></picture>
                   <p class="services-card__desc">E-mailing</p>
                 </div>
-                <div class="services-card" data-aos="zoom-out-up" data-aos-delay="500">
+                <div class="services-card" data-aos="zoom-out-up" data-aos-delay="300">
                   <picture class="services-card__pic"><img src="./img/services/adv/icon-5.svg" alt="Publicité Google Ads" class="services-card__img"></picture>
                   <p class="services-card__desc">Publicité <br>Google Ads</p>
                 </div>
@@ -569,7 +581,7 @@
             </div>
           </div>
         </section>
-        <section class="section services services-insta">
+        <section class="section services services-insta" id="insta">
           <div class="container services__container">
             <div class="services__offer">
               <h3 class="services__title">Formation “Boost ton Insta 1.0”</h3>
@@ -589,7 +601,7 @@
               <p class="services__desc">
                 En bonus, vous recevrez une méthodologie « comment passer un minimum de temps à créer du contenu et faire du profit en utilisant Instagram ».
               </p>
-              <div class="services__buttons">
+              <div class="services__buttons"  data-poppa-open="callback-form" data-name-form="insta">
                 <button class="button-primary services__button">
                   <span class="button__text">
                     En savoir plus
@@ -612,11 +624,11 @@
                   <picture class="services-card__pic"><img src="./img/services/insta/icon-3.svg" alt="Attraction des abonnés" class="services-card__img"></picture>
                   <p class="services-card__desc">Attraction des abonnés</p>
                 </div>
-                <div class="services-card" data-aos="zoom-out-up" data-aos-delay="400">
+                <div class="services-card" data-aos="zoom-out-up" data-aos-delay="200">
                   <picture class="services-card__pic"><img src="./img/services/insta/icon-4.svg" alt="Création des post, des stories, des stories à la une" class="services-card__img"></picture>
                   <p class="services-card__desc">Création des post, des stories, des stories à la une</p>
                 </div>
-                <div class="services-card" data-aos="zoom-out-up" data-aos-delay="500">
+                <div class="services-card" data-aos="zoom-out-up" data-aos-delay="300">
                   <picture class="services-card__pic"><img src="./img/services/insta/icon-5.svg" alt="Rédaction de scripts et plan de contenu" class="services-card__img"></picture>
                   <p class="services-card__desc">Rédaction de scripts et plan de contenu</p>
                 </div>
@@ -642,9 +654,11 @@
                 offre spécifiquement pour votre <br>
                 entreprise dans les 3 jours
               </p>
-              <form action="./callback" class="form price__form">
+              <form action="./mail.php" class="form price__form">
                 <fieldset class="form__fieldset">
                   <input type="hidden" class="input-hidden" readonly name="price">
+                  @@include("tpls/inputs/name.html", {})
+                  @@include("tpls/inputs/email.html", {})
                   @@include("tpls/inputs/tel.html", {})
                 </fieldset>
                 <button class="button-primary form__button price__form-button" type="submit">
@@ -818,7 +832,7 @@
                 générer des clients à partir d'Internet pour <br>
                 votre entreprise.
               </p>
-              <form action="./callback" class="form form-regular catcher__form">
+              <form action="./mail.php" class="form form-regular catcher__form">
                 <h3 class="form__title catcher__form-title">
                   Remplissez le <br>
                   formulaire ci-dessous
@@ -826,6 +840,8 @@
                 <p class="form__desc catcher__form-desc">pour vous inscrire à une consultation marketing gratuite</p>
                 <fieldset class="form__fieldset">
                   <input type="hidden" class="input-hidden" readonly name="last screen">
+                  @@include("tpls/inputs/name.html", {})
+                  @@include("tpls/inputs/email.html", {})
                   @@include("tpls/inputs/tel.html", {})
                 </fieldset>
                 <button class="button-primary form__button catcher__form-submit" type="submit">

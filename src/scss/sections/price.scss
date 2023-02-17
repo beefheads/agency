@@ -10,6 +10,7 @@
 .price__container {
 	display: grid;
 	grid-template-columns: 22.88888888888889rem auto;//412px auto;
+	align-items: center;
 	@media (max-width: $tablet) {
 		grid-template-columns: 1fr;
 	}
