@@ -9,6 +9,7 @@ import "./components/header.js";
 // import "./components/megachips.js";
 import "./components/carousels.js";
 import "./utils/ios-input-zoom-fix.js";
+import "./cookie.js";
 
 // import { Fancybox, Carousel } from "@fancyapps/ui";
 // import { Fancybox, Carousel, Panzoom } from "@fancyapps/ui";

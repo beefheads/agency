@@ -6,21 +6,12 @@
   width: 100%;
   transition: .5s;
   transform: translate(0,100%);
+  opacity: 0;
 
   &._show {
-    bottom: 16px;
+    opacity: 1;
+    bottom: 1rem;
     transform: translate(0);
-  }
-
-  @media screen and (max-width: 768px) {
-
-    & .container {
-      padding: 0;
-    }
-
-    &._show {
-      bottom: 0;
-    }
   }
 }
 
@@ -29,25 +20,30 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  max-width: 1000px;
-  padding: 10px 16px;
+  max-width: 50rem;
+  padding: 1.6666666666666667rem;
   margin: 0 auto;
-  background: #fff;
-  border-radius: 6px;
+  border-radius: 2.2222222222222223rem;
   box-shadow: 0 6px 15px rgba(0,0,0,.1);
+  background: #342960;
+  border: 1px solid rgba(255, 255, 255, 0.03);
 
-  @media screen and (max-width: 768px) {
-    box-shadow: 0 -4px 15px rgba(0,0,0,.1);
+  @media (max-width: $tablet) {
+    padding: 1.2rem;
+    max-width: #{'calc(100% - 2rem)'};
   }
 }
 
 .cookie__content {
   display: flex;
+  align-items: center;
 }
 
 .cookie-icon {
-  min-width: 16px;
-  height: 16px;
+  min-width: 2rem;
+  max-width: 2rem;
+  margin-right: 0.5rem;
+  height: 2rem;
 
   & svg {
     width: 100%;
@@ -56,9 +52,12 @@
 }
 
 .cookie-text {
-  margin: 2px 0 0 6px;
-  font-size: 12px;
-  font-weight: 600;
+  font-size: 0.85rem;
+  font-weight: 300;
+
+  @media (max-width: $tablet) {
+    font-size: 0.65rem;
+  }
 
   & a {
     // color: $accent2;
@@ -72,10 +71,17 @@
 
 .cookie-accept {
   position: relative;
-  width: 16px;
-  height: 16px;
-  margin: 0 0 0 16px;
+  font-size: 0.65rem;
+  display: inline-flex;
+  margin: 0 0 0 1rem;
+  width: initial;
+  min-width: 10em;
+  border-radius: 3rem;
 
+  @media (max-width: $tablet) {
+   font-size: 0.7rem;
+  }
+/*
   &::before {
     position: absolute;
     top: 50%;
@@ -104,7 +110,8 @@
 
     &::before,
     &::after {
-      background: $main;
+      background: var(--bg-element);
     }
   }
+*/
 }
