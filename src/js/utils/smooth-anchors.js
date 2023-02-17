@@ -12,7 +12,12 @@
 //   });
 // }
 
+import {bodyLock} from './helpers.js'
+
 function scrollToAnchor(distanceTop = 0) {
+    if (distanceTop == 0) {
+        distanceTop = window.innerHeight / 10;
+    }
     const linkElems = document.querySelectorAll('[href^="#"]')
     if (!linkElems) return;
     for (let i = 0; i < linkElems.length; i++) {
@@ -29,7 +34,11 @@ function scrollToAnchor(distanceTop = 0) {
                 left: 0,
                 behavior: 'smooth'
             })
+
+            if (!link.classList.contains('header__nav-link')) return
+            document.querySelector('.header').classList.remove('header--opened');
+            bodyLock(false);
         })
     }
 }
-scrollToAnchor(80);
+scrollToAnchor();

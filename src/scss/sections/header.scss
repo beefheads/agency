@@ -9,6 +9,7 @@
 	z-index: 20;
 	letter-spacing: initial;
 	color: #643F90;
+	transition: all 0.35s ease-in;
 	@media (max-width: $w-burger) {
 		display: flex;
 		justify-content: flex-start;
@@ -16,6 +17,10 @@
 		align-items: flex-end;
 		pointer-events: none;
 	}
+}
+.header--hidden {
+	transform: translateY(-50vh);
+	opacity: 0;
 }
 .header__container {
 	display: flex;
