@@ -115,6 +115,9 @@
   transition: all 0.3s ease-out;
   text-align: center;
   text-transform: uppercase;
+  width: initial;
+  padding-left: 2em;
+  padding-right: 2em;
 
   @media (max-width: $tablet) {
     font-size: 0.60824rem; //9.1236
