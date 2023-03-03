@@ -126,6 +126,33 @@ input[type="search"]::-webkit-search-cancel-button {
   opacity: 0;
 }
 
+ol {
+  counter-reset: ol;
+}
+ol > li {
+  position: relative;
+  list-style: none;
+  padding-left: 1.2em;
+  counter-increment: ol;
+  margin-bottom: 0.2em;
+}
+ol > li::before {
+  content: counter(ol)". ";
+  position: absolute;
+  left: -0.1em;
+}
+.ul-regular li {
+  position: relative;
+  list-style: none;
+  padding-left: 1.2em;
+  margin-bottom: 0.2em;
+}
+.ul-regular > li::before {
+  content: "—";
+  position: absolute;
+  left: -0.1em;
+}
+
 
 /*
   Общие стили проекта
@@ -151,4 +178,4 @@ input[type="search"]::-webkit-search-cancel-button {
 /*
   Стили для отдельных страниц
  */ 
-// @import "./pages/";
+@import "./pages/lang-ru";

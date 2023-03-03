@@ -1,14 +1,14 @@
 <div id="callback-form" class="poppa modal modal-callback-form">
   <form action="./mail.php" class="form form-regular form__modal-callback js_submit-thanks">
     <h3 class="form__title modal-callback-form__title">
-      Заполните <br>
-      форму
-   </h3>
+      Remplissez le <br>
+      formulaire
+    </h3>
     <fieldset class="form__fieldset">
       <input type="hidden" class="input-hidden" readonly name="form_name">
-      @@include("./inputs/name.html", {placeholder: "Введите имя"})
-      @@include("./inputs/email.html", {placeholder: "Введите email"})
-      @@include("./inputs/tel.html", {placeholder: "Введите номер телефона"})
+      @@include("./inputs/name.html", {placeholder: "Nom-Prenom"})
+      @@include("./inputs/email.html", {placeholder: "Courriel"})
+      @@include("./inputs/tel.html", {placeholder: "Entrez le numéro de téléphone"})
     </fieldset>
     <button class="button-primary form__button modal-callback-form__button" type="submit">
       <span class="button__text">Envoyer la demande</span>
@@ -17,8 +17,8 @@
   </form>
 </div>
 <div class="poppa modal modal-thanks" id="thanks">
-  <!-- <h3 class="modal__title">Спасибо</h3> -->
-  <p class="modal__desc">Перезвоним вам в ближайшее время.</p>
+  <h3 class="modal__title">Grâce</h3>
+  <p class="modal__desc">Je vous rappellerai bientôt</p>
   <svg class="modal-thanks__icon">
     <use xlink:href="./img/common/valid.svg#valid" />
   </svg>
