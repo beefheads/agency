@@ -40,8 +40,6 @@
     line-height: 1.25;
   }
 }
-.section-desc {
-}
 .section-text--color {
   color: var(--c-accent);
 }
@@ -80,7 +78,10 @@
     margin-bottom: 0.6888888888888888em;
   }
 }
-.section-ul li:after {
+.section-ul li:last-child {
+  margin-bottom: 0;
+}
+.section-ul li:before {
   content: "";
   position: absolute;
   top: 0;
