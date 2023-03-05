@@ -118,6 +118,7 @@
   width: initial;
   padding-left: 2em;
   padding-right: 2em;
+  white-space: nowrap;
 
   @media (max-width: $tablet) {
     font-size: 0.60824rem; //9.1236

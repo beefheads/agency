@@ -608,9 +608,9 @@
 }
 .services-programming .services__offer {
 	order: 3;
-  max-width: 23.6rem;
+  // max-width: 23.6rem;
   margin-left: auto;
-  max-width: 25.6rem;
+  max-width: 29.6rem;//25.6rem;
   margin-right: -2.3rem;
 	@media (max-width: $tablet) {
 		margin-right: 0;
@@ -620,10 +620,10 @@
 }
 
 .services-programming .services__pic {
-	width: 163%;
-  margin-left: -32%;
-  margin-top: -17%;
-  margin-bottom: 2.7%;
+	width: 183%;//163%;
+  margin-left: -86%;//-32%;
+  margin-top: -52%;//-17%;
+  margin-bottom: 2.7%;//2.7%;
   @media (max-width: $tablet) {
 	  width: 110%;
     margin-left: -32%;
@@ -638,28 +638,28 @@
 
 .services-programming .services-card:nth-of-type(1) {
   top: -2.5rem;
-  right: -7.6rem;
+  right: -0.6rem;//-7.6rem;
 	@media (max-width: $tablet) {
 		padding-left: 0;
 		padding-right: 0;
 	}
 }
 .services-programming .services-card:nth-of-type(2) {
-	top: 0.2rem;
-  right: -8.1rem;
+	top: 0.8rem;//0.2rem;
+  right: -2.2rem;//-8.1rem;
 }
 .services-programming .services-card:nth-of-type(3) {
-  top: 9.1rem;
-  right: -8.6rem;
+  top: 10.9rem;//9.1rem;
+  right: -4.1rem;//-8.6rem;
 }
 .services-programming .services-card:nth-of-type(4) {
-  top: 6.6rem;
-  left: 18.3rem;
+  top: 9.6rem;//6.6rem;
+  left: 12.3rem;//18.3rem;
   @media (max-width: $tablet) {
 		padding-bottom: 1rem;
 	}
 }
 .services-programming .services-card:nth-of-type(5) {
-  top: 8.4rem;
-  left: -2.5rem;
+  top: 11.7rem;//8.4rem;
+  left: -9.5rem;//-2.5rem;
 }
