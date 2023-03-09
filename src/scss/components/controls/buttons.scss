@@ -107,7 +107,7 @@
   align-items: center;
   font-weight: 700;
   font-size: 0.7777777777777778rem;
-  padding: 1.0714285714285714em 0.7857142857142857em 1.6042857142857143em;
+  padding: 1.0714285714285714em 0.7857142857142857em ;//1.6042857142857143em;
   border-radius: 1.2111111111111112rem;//21.8px;
   min-width: 9.88888888888889rem;//178px;
   line-height: initial;
@@ -124,7 +124,8 @@
     font-size: 0.60824rem; //9.1236
     min-width: 5.666666666666667rem; 
     padding-top: 1.0719452847560174em;
-    padding-bottom: 1.6440878600552413em;
+    padding-bottom: 1.0719452847560174em;
+    // padding-bottom: 1.6440878600552413em;
   }
 }
 .button--wait {
