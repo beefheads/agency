@@ -100,3 +100,37 @@
      top: 0.1em;
   }
 }
+.section-ol li {
+  padding-left: 1.9em;
+  margin-bottom: 0.75em;
+}
+.section-ol li:before {
+  content: counter(ol);
+  color: var(--c-text-on);
+  background: #35B4EF;
+  border-radius: 0.2561111111111111rem;
+  --size: 1.1111111111111112rem;
+  max-width: var(--size);
+  min-width: var(--size);
+  width: var(--size);
+  height: var(--size);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 300;
+  font-size: 1.0333333333333333em;
+  @media (max-width: $tablet) {
+    --size: 1.4814814814814814rem;
+    border-radius: 0.35rem;
+  }
+}
+
+.section__buttons {
+  display: flex;
+  align-items: center;
+}
+.section__buttons-center {
+  @extend .section__buttons;
+  justify-content: center;
+}

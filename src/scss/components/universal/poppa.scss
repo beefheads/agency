@@ -47,8 +47,11 @@
   width: 100%;
   height: 100%;
 }
-.poppa--scrollable .poppa__aligner{
+.poppa--scrollable .poppa__aligner {
   align-items: flex-start;
+}
+.poppa--scrollable .poppa__closer {
+  position: fixed;
 }
 
 .poppa {

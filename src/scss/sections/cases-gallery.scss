@@ -108,3 +108,111 @@
 	display: block;
 	object-fit: cover;
 }
+
+.modal-case {
+	max-width: 65rem;
+}
+.modal-case__section {
+	padding: 3.3333333333333335rem 3.611111111111111rem;
+	margin-bottom: 2rem;
+	border-radius: 5rem;
+	background-color: var(--bg-element);
+	color: var(--c-text-dark);
+	@media (max-width: $tablet) {
+		padding: 2.5925925925925926rem 1.7777777777777777rem 2.59rem 0.9rem;
+		border-radius: 2.962962962962963rem;
+	}
+}
+.modal-case__title.section-title {
+	font-size: 2.2222222222222223rem;
+	@media (max-width: $tablet) {
+		font-size: 1.1851851851851851rem;
+	}
+}
+.modal-case__title {
+	margin-bottom: 0.7777777777777778rem;
+	font-weight: 700;
+	max-width: 30rem;
+	margin-left: auto;
+	margin-right: auto;
+	text-transform: initial;
+	color: #333;
+	@media (max-width: $tablet) {
+		text-align: left;
+		margin-bottom: 0.5em;
+	}
+}
+.modal-case__subtitle {
+	max-width: 30rem;
+	margin-left: auto;
+	margin-right: auto;
+	@media (max-width: $tablet) {
+		text-align: left;
+	}
+}
+.modal-case-comparer {
+	padding-top: 2.7777777777777777rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	column-gap: 3.888888888888889rem;
+	row-gap: 2.4444444444444446rem;
+	@media (max-width: $tablet) {
+		grid-template-columns: 1fr;		
+		padding-top: 1.5rem;
+		row-gap: 1.4814814814814814rem;
+	}
+}
+.modal-case-comparer--vertical {
+	grid-template-columns: 1fr;
+}
+@media (max-width: $tablet) {
+	.modal-case-comparer--vertical .modal-case-comparer-card{
+		width: 100%;
+    overflow: hidden;		
+	}
+	.modal-case-comparer--vertical .modal-case-comparer-card__media {
+    overflow-x: auto;
+    width: 100%;
+    @include scrollermask;
+	}
+	.modal-case-comparer--vertical .modal-case-comparer-card__pic {
+		height: 5rem;
+    width: 100%;
+    margin-left: 1rem;
+	}
+	.modal-case-comparer--vertical .modal-case-comparer-card__img {
+		width: initial;
+	}
+}
+
+.modal-case-comparer-card__title {
+	color: #333;
+	font-size: 1.1111111111111112rem;
+	margin-bottom: 0.8888888888888888rem;
+	font-weight: 700;
+	@media (max-width: $tablet) {
+		text-align: left;
+	}
+}
+.modal-case-comparer-card__ul,
+.modal-case-comparer-card__ol {
+	color: var(--c-text-dark);
+  font-size: 0.8888888888888888rem; //16 1920×1000
+  @media (max-width: $tablet) {
+  	// font-size: 1.1111111111111112rem;
+  	font-size: 1.131111rem;
+  }
+}
+.modal-case-comparer-card__ul li:before,
+.modal-case-comparer-card__ol li:before {
+	background-color: #35B4EF;
+}
+.modal-case-gallery {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	padding-top: 2rem;
+	grid-gap: 1.3888888888888888rem
+	@media (max-width: $tablet) {
+	grid-template-columns: repeat(1, 1fr);
+	}
+}
